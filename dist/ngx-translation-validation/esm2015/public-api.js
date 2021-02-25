@@ -1,0 +1,11 @@
+/*
+ * Public API Surface of ngx-translation-validation
+ */
+export * from './lib/ngx-tv.directive';
+export * from './lib/ngx-tv-scope.directive';
+export * from './lib/ngx-tv-container.directive';
+export * from './lib/ngx-tv-form.directive';
+export * from './lib/ngx-tv.config';
+export * from './lib/ngx-tv-container/ngx-tv-container.component';
+export * from './lib/ngx-tv.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL25neC10cmFuc2xhdGlvbi12YWxpZGF0aW9uL3NyYy9wdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYyx3QkFBd0IsQ0FBQztBQUN2QyxjQUFjLDhCQUE4QixDQUFDO0FBQzdDLGNBQWMsa0NBQWtDLENBQUM7QUFDakQsY0FBYyw2QkFBNkIsQ0FBQztBQUM1QyxjQUFjLHFCQUFxQixDQUFDO0FBQ3BDLGNBQWMsbURBQW1ELENBQUM7QUFDbEUsY0FBYyxxQkFBcUIsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBQdWJsaWMgQVBJIFN1cmZhY2Ugb2Ygbmd4LXRyYW5zbGF0aW9uLXZhbGlkYXRpb25cbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL2xpYi9uZ3gtdHYuZGlyZWN0aXZlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL25neC10di1zY29wZS5kaXJlY3RpdmUnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbmd4LXR2LWNvbnRhaW5lci5kaXJlY3RpdmUnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbmd4LXR2LWZvcm0uZGlyZWN0aXZlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL25neC10di5jb25maWcnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbmd4LXR2LWNvbnRhaW5lci9uZ3gtdHYtY29udGFpbmVyLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9uZ3gtdHYubW9kdWxlJztcbiJdfQ==

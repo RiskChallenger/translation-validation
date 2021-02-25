@@ -1,0 +1,32 @@
+import { ComponentFactoryResolver, ComponentRef, ElementRef, OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
+import { NgControl } from '@angular/forms';
+import { Observable, Subscription } from 'rxjs';
+import { NgxTvContainerDirective } from './ngx-tv-container.directive';
+import { NgxTvContainerComponent } from './ngx-tv-container/ngx-tv-container.component';
+import { NgxTvFormDirective } from './ngx-tv-form.directive';
+import { NgxTvScopeDirective } from './ngx-tv-scope.directive';
+import { NgxTvConfig } from './ngx-tv.config';
+export declare class NgxTvDirective implements OnInit, OnDestroy {
+    private host;
+    private vcr;
+    private resolver;
+    private controlDir;
+    private config;
+    private controlErrorContainer?;
+    private controlErrorContext?;
+    private form?;
+    ref?: ComponentRef<NgxTvContainerComponent>;
+    submit$: Observable<Event>;
+    container: ViewContainerRef;
+    blur$: Observable<Event>;
+    context: string | undefined;
+    statusChangesObservable: Subscription;
+    constructor(host: ElementRef<HTMLFormElement>, vcr: ViewContainerRef, resolver: ComponentFactoryResolver, controlDir: NgControl, config: NgxTvConfig, controlErrorContainer?: NgxTvContainerDirective | undefined, controlErrorContext?: NgxTvScopeDirective | undefined, form?: NgxTvFormDirective | undefined);
+    get element(): HTMLFormElement;
+    ngOnInit(): void;
+    ngOnDestroy(): void;
+    addSubmittedClass(): void;
+    addInvalidClass(): void;
+    removeInvalidClass(): void;
+    private setError;
+}
