@@ -1,0 +1,32 @@
+# This workflow will do a clean install of node dependencies, build the source code
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 15
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 15
+
+      - name: Install
+        run: |
+            yarn config set ignore-engines true
+            yarn
+
+      - name: Build Step
+        run: yarn build:lib
+
+      - name: Run Semantic Release
+        run: yarn semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

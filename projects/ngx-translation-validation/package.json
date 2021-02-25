@@ -1,6 +1,9 @@
 {
   "name": "ngx-translation-validation",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
   "peerDependencies": {
     "@angular/common": "^11.1.2",
     "@angular/core": "^11.1.2"
