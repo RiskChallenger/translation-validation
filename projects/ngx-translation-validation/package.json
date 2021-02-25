@@ -1,0 +1,28 @@
+{
+  "name": "ngx-translation-validation",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^11.1.2",
+    "@angular/core": "^11.1.2"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "keywords": [
+    "angular",
+    "angular 2",
+    "ngx-translation-validation"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "git@github.com:RiskChallenger/translation-validation.git/issue"
+  },
+  "homepage": "git@github.com:RiskChallenger/translation-validation.git#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:RiskChallenger/translation-validation.git"
+  }
+}
