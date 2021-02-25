@@ -1,6 +1,6 @@
 {
   "projectName": "ngx-translation-validation",
-  "projectOwner": "",
+  "projectOwner": "RiskChallenger",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
@@ -9,6 +9,19 @@
   "imageSize": 100,
   "commit": true,
   "commitConvention": "angular",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "Langstra",
+      "name": "Wybren Kortstra",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1962982?v=4",
+      "profile": "https://riskchallenger.nl/",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "maintenance"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
