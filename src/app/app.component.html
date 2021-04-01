@@ -1,6 +1,6 @@
 <ng-container *transloco="let t">
   <h1>Some form</h1>
-  <form [formGroup]="form" (ngSubmit)="onSubmit()" lvmScope="bier">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" ngxTvScope="bier">
     <div class="form-group">
       <label for="name">{{ t('name') }}</label>
       <input formControlName="name" id="name" type="text" />
