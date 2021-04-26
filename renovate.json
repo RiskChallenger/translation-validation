@@ -1,5 +1,10 @@
 {
-  "extends": [
-    "config:base"
+  "extends": ["config:base"],
+  "schedule": ["every weekend"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<=4.1"
+    }
   ]
 }
