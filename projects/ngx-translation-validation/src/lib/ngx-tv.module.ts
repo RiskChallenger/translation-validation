@@ -10,7 +10,8 @@ import { NgxTvDirective } from './ngx-tv.directive';
 
 export function getConfig(config?: Partial<NgxTvConfig>): NgxTvConfig {
   return {
-    scope: 'validation',
+    type: 'validation',
+    defaultScope: 'general',
     submittedClass: 'ng-submitted',
     errorsComponent: NgxTvContainerComponent,
     invalidClass: undefined,
@@ -38,7 +39,7 @@ export class NgxTvModule {
           provide: NGX_TV_CONFIG,
           useValue: getConfig(config),
         },
-        { provide: TRANSLOCO_SCOPE, useValue: getConfig(config).scope },
+        { provide: TRANSLOCO_SCOPE, useValue: getConfig(config).type },
       ],
     };
   }

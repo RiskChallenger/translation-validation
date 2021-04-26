@@ -39,8 +39,8 @@ export class NgxTvDirective implements OnInit, OnDestroy {
     private resolver: ComponentFactoryResolver,
     @Self() private controlDir: NgControl,
     @Inject(NGX_TV_CONFIG) private config: NgxTvConfig,
-    @Optional() private controlErrorContainer?: NgxTvContainerDirective,
-    @Optional() private controlErrorContext?: NgxTvScopeDirective,
+    @Optional() @Host() private controlErrorContainer?: NgxTvContainerDirective,
+    @Optional() @Host() private controlErrorContext?: NgxTvScopeDirective,
     @Optional() @Host() private form?: NgxTvFormDirective
   ) {}
 
@@ -57,14 +57,14 @@ export class NgxTvDirective implements OnInit, OnDestroy {
       ) ?? EMPTY;
     this.blur$ = !this.form?.onSubmit ? fromEvent(this.element, 'blur').pipe(shareReplay(1)) : EMPTY;
     this.container = this.controlErrorContainer?.vcr ?? this.vcr;
-    this.context = this.controlErrorContext?.scope ?? 'general';
+    this.context = this.controlErrorContext?.scope ?? this.config.defaultScope;
 
     this.statusChangesObservable = merge(this.submit$, this.blur$, this.controlDir.statusChanges || EMPTY).subscribe(
       () => {
         const controlErrors = this.controlDir.errors;
         if (controlErrors) {
           const firstKey = Object.keys(controlErrors)[0];
-          this.setError(`${this.config.scope}.${this.context}.${this.controlDir.name}.${firstKey}`);
+          this.setError(`${this.config.type}.${this.context}.${this.controlDir.name}.${firstKey}`);
         } else if (this.ref) {
           this.setError(null);
         }

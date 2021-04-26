@@ -17,7 +17,7 @@ import { SomeErrorContainerComponent } from './some-error-container/some-error-c
     HttpClientModule,
     TranslocoRootModule,
     NgxTvModule.forRoot({
-      scope: 'validation',
+      type: 'validation',
       invalidClass: 'invalid-input',
       errorsComponent: SomeErrorContainerComponent,
     }),

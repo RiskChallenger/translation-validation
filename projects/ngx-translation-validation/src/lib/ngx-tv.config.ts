@@ -2,7 +2,8 @@ import { InjectionToken, Type } from '@angular/core';
 import { NgxTvContainerComponent } from './ngx-tv-container/ngx-tv-container.component';
 
 export interface NgxTvConfig {
-  scope: string;
+  type: string;
+  defaultScope: string;
   invalidClass?: string;
   submittedClass?: string;
   errorsComponent: Type<NgxTvContainerComponent>;
