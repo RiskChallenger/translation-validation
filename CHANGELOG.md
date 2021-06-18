@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/RiskChallenger/translation-validation/compare/v1.0.1...v1.0.2) (2021-06-18)
+
+
+### Bug Fixes
+
+* **deps:** update all dependencies ([e88ed47](https://github.com/RiskChallenger/translation-validation/commit/e88ed47328ce46f0e8ac9bb0bfd1bb0b2069a20f))
+* **deps:** update angular monorepo to v12 (major) ([63a5f2f](https://github.com/RiskChallenger/translation-validation/commit/63a5f2fd78305dcc634dbfcb6603cf5a7f958a61))
+
 ## [1.0.1](https://github.com/RiskChallenger/translation-validation/compare/v1.0.0...v1.0.1) (2021-04-27)
 
 
