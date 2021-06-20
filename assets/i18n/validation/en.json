@@ -1,0 +1,12 @@
+{
+  "general": {
+    "name.required": "General name is required",
+    "phone.required": "General phone is required",
+    "email.email": "General email is invalid"
+  },
+  "submit": {
+    "name.required": "Submit name is required",
+    "phone.required": "Submit phone is required",
+    "email.email": "Submit email is invalid"
+  }
+}
