@@ -31,7 +31,7 @@ export function getConfig(config?: Partial<NgxTvConfig>): NgxTvConfig {
   exports: [NgxTvDirective, NgxTvFormDirective, NgxTvContainerComponent, NgxTvContainerDirective, NgxTvScopeDirective],
 })
 export class NgxTvModule {
-  static forRoot(config?: NgxTvConfig): ModuleWithProviders<NgxTvModule> {
+  static forRoot(config?: Partial<NgxTvConfig>): ModuleWithProviders<NgxTvModule> {
     return {
       ngModule: NgxTvModule,
       providers: [

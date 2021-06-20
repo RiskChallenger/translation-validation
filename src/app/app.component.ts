@@ -8,7 +8,19 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class AppComponent {
   title = 'angular-localized-validation-messages';
-  form = this.formBuilder.group(
+
+  formOnSubmit = this.formBuilder.group(
+    {
+      name: ['', Validators.required],
+      email: ['', Validators.email],
+      phone: ['', Validators.required],
+    },
+    {
+      updateOn: 'submit',
+    }
+  );
+
+  formOnBlur = this.formBuilder.group(
     {
       name: ['', Validators.required],
       email: ['', Validators.email],
@@ -19,9 +31,18 @@ export class AppComponent {
     }
   );
 
+  formOnChange = this.formBuilder.group(
+    {
+      name: ['', Validators.required],
+      email: ['', Validators.email],
+      phone: ['', Validators.required],
+    },
+    {
+      updateOn: 'change',
+    }
+  );
+
   constructor(private formBuilder: FormBuilder) {}
 
-  onSubmit(): void {
-    console.log('submitted shit bitch');
-  }
+  onSubmit(): void {}
 }

@@ -132,6 +132,9 @@ But if you'd like the container to appear in a parent of the controlForm you cou
 </form>
 <ngx-tv-container-component></ngx-tv-container-component> // container component will be rendered here
 ```
+
+## Contribute
+
 ## FAQ
 
 ### How to ...

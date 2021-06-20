@@ -5,7 +5,7 @@ export interface NgxTvConfig {
   type: string;
   defaultScope: string;
   invalidClass?: string;
-  submittedClass?: string;
+  submittedClass: string;
   errorsComponent: Type<NgxTvContainerComponent>;
 }
 

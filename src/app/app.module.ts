@@ -6,10 +6,9 @@ import { NgxTvModule } from 'ngx-translation-validation';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco/transloco-root.module';
-import { SomeErrorContainerComponent } from './some-error-container/some-error-container.component';
 
 @NgModule({
-  declarations: [AppComponent, SomeErrorContainerComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     FormsModule,
@@ -19,7 +18,6 @@ import { SomeErrorContainerComponent } from './some-error-container/some-error-c
     NgxTvModule.forRoot({
       type: 'validation',
       invalidClass: 'invalid-input',
-      errorsComponent: SomeErrorContainerComponent,
     }),
   ],
   providers: [],

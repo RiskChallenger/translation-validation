@@ -1,7 +1,6 @@
-import { Directive, ElementRef, EventEmitter, Self } from '@angular/core';
-import { ControlContainer, FormGroup, FormGroupDirective, NgControl, NgForm, NgModelGroup } from '@angular/forms';
-import { EMPTY, fromEvent, Observable } from 'rxjs';
-import { shareReplay, tap } from 'rxjs/operators';
+import { Directive, ElementRef, Inject } from '@angular/core';
+import { FormGroupDirective } from '@angular/forms';
+import { NGX_TV_CONFIG, NgxTvConfig } from './ngx-tv.config';
 
 @Directive({
   // tslint:disable-next-line:directive-selector
@@ -10,15 +9,27 @@ import { shareReplay, tap } from 'rxjs/operators';
 export class NgxTvFormDirective {
   submit$ = this.hostFormGroup.ngSubmit;
 
-  constructor(private host: ElementRef<HTMLFormElement>, private hostFormGroup: FormGroupDirective) {}
+  constructor(
+    private host: ElementRef<HTMLFormElement>,
+    private hostFormGroup: FormGroupDirective,
+    @Inject(NGX_TV_CONFIG) private config: NgxTvConfig
+  ) {}
 
   get onBlur(): boolean {
     return this.hostFormGroup.form.updateOn === 'blur';
   }
+
   get onSubmit(): boolean {
     return this.hostFormGroup.form.updateOn === 'submit';
   }
+
   get element(): HTMLElement {
     return this.host.nativeElement;
+  }
+
+  public addSubmittedClass(): void {
+    if (this.config.submittedClass) {
+      this.element.classList.add(this.config.submittedClass);
+    }
   }
 }

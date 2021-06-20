@@ -113,6 +113,10 @@
               "devServerTarget": "translation-validation:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     },

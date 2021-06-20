@@ -1,17 +1,54 @@
 <ng-container *transloco="let t">
-  <h1>Some form</h1>
-  <form [formGroup]="form" (ngSubmit)="onSubmit()" ngxTvScope="bier">
+  <h1>Example forms</h1>
+  <p>The following forms will trigger the validation (messages) on submit, blur and change respectively.</p>
+
+  <h2>On Submit</h2>
+  <form [formGroup]="formOnSubmit" (ngSubmit)="onSubmit()" ngxTvScope="submit">
     <div class="form-group">
-      <label for="name">{{ t('name') }}</label>
-      <input formControlName="name" id="name" type="text" />
+      <label for="name1">{{ t('name') }}</label>
+      <input formControlName="name" id="name1" type="text" />
     </div>
     <div class="form-group">
-      <label for="email">{{ t('email') }}</label>
-      <input formControlName="email" id="email" type="text" />
+      <label for="email1">{{ t('email') }}</label>
+      <input formControlName="email" id="email1" type="text" />
     </div>
     <div class="form-group">
-      <label for="phone">{{ t('phone') }}</label>
-      <input formControlName="phone" id="phone" type="text" />
+      <label for="phone1">{{ t('phone') }}</label>
+      <input formControlName="phone" id="phone1" type="text" />
+    </div>
+    <button type="submit">SUBMIT</button>
+  </form>
+
+  <h2>On Blur</h2>
+  <form [formGroup]="formOnBlur" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name2">{{ t('name') }}</label>
+      <input formControlName="name" id="name2" type="text" />
+    </div>
+    <div class="form-group">
+      <label for="email2">{{ t('email') }}</label>
+      <input formControlName="email" id="email2" type="text" />
+    </div>
+    <div class="form-group">
+      <label for="phone2">{{ t('phone') }}</label>
+      <input formControlName="phone" id="phone2" type="text" />
+    </div>
+    <button type="submit">SUBMIT</button>
+  </form>
+
+  <h2>On Change</h2>
+  <form [formGroup]="formOnChange" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name3">{{ t('name') }}</label>
+      <input formControlName="name" id="name3" type="text" />
+    </div>
+    <div class="form-group">
+      <label for="email3">{{ t('email') }}</label>
+      <input formControlName="email" id="email3" type="text" />
+    </div>
+    <div class="form-group">
+      <label for="phone3">{{ t('phone') }}</label>
+      <input formControlName="phone" id="phone3" type="text" />
     </div>
     <button type="submit">SUBMIT</button>
   </form>

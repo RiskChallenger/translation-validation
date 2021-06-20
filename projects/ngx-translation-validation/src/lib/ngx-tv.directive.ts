@@ -52,7 +52,7 @@ export class NgxTvDirective implements OnInit, OnDestroy {
     this.submit$ =
       this.form?.submit$.pipe(
         tap(() => {
-          this.addSubmittedClass();
+          this.form?.addSubmittedClass();
         })
       ) ?? EMPTY;
     this.blur$ = !this.form?.onSubmit ? fromEvent(this.element, 'blur').pipe(shareReplay(1)) : EMPTY;
@@ -76,12 +76,6 @@ export class NgxTvDirective implements OnInit, OnDestroy {
     this.statusChangesObservable.unsubscribe();
   }
 
-  addSubmittedClass(): void {
-    if (this.config.submittedClass) {
-      this.form?.element.classList.add(this.config.submittedClass);
-    }
-  }
-
   addInvalidClass(): void {
     if (this.config.invalidClass) {
       this.host.nativeElement.classList.add(this.config.invalidClass);
@@ -100,7 +94,8 @@ export class NgxTvDirective implements OnInit, OnDestroy {
       this.ref = this.container.createComponent(factory);
       this.addInvalidClass();
     }
-    if (this.ref) {
+
+    if (this.ref && errorText) {
       this.ref.instance.text = errorText;
     }
 
