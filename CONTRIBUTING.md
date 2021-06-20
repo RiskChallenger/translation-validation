@@ -7,26 +7,26 @@
 Start by installing all dependencies:
 
 ```bash
-npm i
+yarn
 ```
 
 Run the tests:
 
 ```bash
-npm test
-npm run e2e
+yarn test
+yarn run e2e
 ```
 
 Run the playground app:
 
 ```bash
-npm start
+yarn start
 ```
 
 ## Building
 
 ```bash
-npm run build
+yarn build
 ```
 
 ## <a name="rules"></a> Coding Rules
