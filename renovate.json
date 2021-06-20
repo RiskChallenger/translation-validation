@@ -5,6 +5,10 @@
     {
       "matchPackageNames": ["typescript"],
       "allowedVersions": "<=4.2"
+    },
+    {
+      "matchPackageNames": ["rxjs"],
+      "allowedVersions": "<7"
     }
   ]
 }
