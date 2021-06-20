@@ -32,3 +32,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Release to GitHub Pages
+        run: ng deploy --base-href=/translation-validation/
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
