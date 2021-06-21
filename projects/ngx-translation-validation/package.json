@@ -5,8 +5,8 @@
     "semantic-release": "semantic-release"
   },
   "peerDependencies": {
-    "@angular/common": "^11.1.2",
-    "@angular/core": "^11.1.2"
+    "@angular/common": "^11.1.2 || ^12.0.0",
+    "@angular/core": "^11.1.2 || ^12.0.0"
   },
   "dependencies": {
     "tslib": "2.2.0"
