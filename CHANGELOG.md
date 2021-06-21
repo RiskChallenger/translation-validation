@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/RiskChallenger/translation-validation/compare/v1.0.2...v1.0.3) (2021-06-21)
+
+
+### Bug Fixes
+
+* configuration changes and update to examples ([335c5b8](https://github.com/RiskChallenger/translation-validation/commit/335c5b88e556af401ebab236b851121b362466c4))
+* update all dependencies ([3549286](https://github.com/RiskChallenger/translation-validation/commit/3549286a537088ab9c8a044fbc0e6916d0353dca))
+* update peer deps angular to include ^12.0.0 ([83c059b](https://github.com/RiskChallenger/translation-validation/commit/83c059bee06993a78f3563089ca6525694d258d7))
+
 ## [1.0.2](https://github.com/RiskChallenger/translation-validation/compare/v1.0.1...v1.0.2) (2021-06-18)
 
 
