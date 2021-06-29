@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/RiskChallenger/translation-validation/compare/v1.0.3...v1.0.4) (2021-06-29)
+
+
+### Bug Fixes
+
+* export validation message component ([df29899](https://github.com/RiskChallenger/translation-validation/commit/df29899a8b810d1f6eab5cc86bd40a8b490d6dab))
+
 ## [1.0.3](https://github.com/RiskChallenger/translation-validation/compare/v1.0.2...v1.0.3) (2021-06-21)
 
 
