@@ -12,7 +12,7 @@
     "hooks:pre-commit": "node hooks/pre-commit.js",
     "commit": "git-cz",
     "release:first": "npm run release -- --first-release",
-    "deploy": "ng deploy --base-href=https://ngneat.github.io/libName/",
+    "deploy": "ng deploy --base-href=/translation-validation/",
     "copy": "cp -r README.md dist/ngx-translation-validation",
     "build:lib": "ng build ngx-translation-validation --prod && npm run copy",
     "test:lib": "ng test ngx-translation-validation",
