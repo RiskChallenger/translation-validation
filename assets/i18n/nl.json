@@ -1,1 +1,13 @@
-{}
+{
+  "changeToDutch": "Wissel taal naar Nederlands",
+  "changeToEnglish": "Set language to English",
+  "header": "Voorbeeld translation validation",
+  "explanatory": "De formulieren hieronder zullen de foutmeldingen laten zien bij het versturen van een formulier, blurren van een input of bij verandering van waarde.",
+  "onSubmit": "Bij versturen",
+  "name": "Voor en achternaam",
+  "email": "E-mailadres (naam@voorbeeld.nl)",
+  "phone": "Telefoonnummer met landcode (bijv +31612345678)",
+  "submit": "Verstuur",
+  "onBlur": "Bij blurren",
+  "onChange": "Bij verandering van input (standaard voor forms)"
+}

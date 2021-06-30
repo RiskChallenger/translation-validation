@@ -1,1 +1,12 @@
-{}
+{
+  "general": {
+    "name.required": "Algemene naam is verplicht",
+    "phone.required": "Algemene telefoon is verplicht",
+    "email.email": "Algemene email is niet goed"
+  },
+  "submit": {
+    "name.required": "Naam is verplicht",
+    "phone.required": "Telefoon is verplicht",
+    "email.email": "Email is niet goed"
+  }
+}
