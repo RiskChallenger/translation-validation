@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,6 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'angular-localized-validation-messages';
-
   formOnSubmit = this.formBuilder.group(
     {
       name: ['', Validators.required],
@@ -42,7 +41,11 @@ export class AppComponent {
     }
   );
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private transloco: TranslocoService) {}
 
   onSubmit(): void {}
+
+  changeLang(locale: 'nl' | 'en'): void {
+    this.transloco.setActiveLang(locale);
+  }
 }

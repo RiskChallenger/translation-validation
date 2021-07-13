@@ -1,8 +1,10 @@
 <ng-container *transloco="let t">
-  <h1>Example forms</h1>
-  <p>The following forms will trigger the validation (messages) on submit, blur and change respectively.</p>
+  <button (click)="changeLang('nl')">{{ t('changeToDutch') }}</button>
+  <button (click)="changeLang('en')">{{ t('changeToEnglish') }}</button>
+  <h1>{{ t('header') }}</h1>
+  <p>{{ t('explanatory') }}</p>
 
-  <h2>On Submit</h2>
+  <h2>{{ t('onSubmit') }}</h2>
   <form [formGroup]="formOnSubmit" (ngSubmit)="onSubmit()" ngxTvScope="submit">
     <div class="form-group">
       <label for="name1">{{ t('name') }}</label>
@@ -16,10 +18,10 @@
       <label for="phone1">{{ t('phone') }}</label>
       <input formControlName="phone" id="phone1" type="text" />
     </div>
-    <button type="submit">SUBMIT</button>
+    <button type="submit">{{ t('submit') }}</button>
   </form>
 
-  <h2>On Blur</h2>
+  <h2>{{ t('onBlur') }}</h2>
   <form [formGroup]="formOnBlur" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name2">{{ t('name') }}</label>
@@ -33,10 +35,10 @@
       <label for="phone2">{{ t('phone') }}</label>
       <input formControlName="phone" id="phone2" type="text" />
     </div>
-    <button type="submit">SUBMIT</button>
+    <button type="submit">{{ t('submit') }}</button>
   </form>
 
-  <h2>On Change</h2>
+  <h2>{{ t('onChange') }}</h2>
   <form [formGroup]="formOnChange" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name3">{{ t('name') }}</label>
@@ -50,6 +52,6 @@
       <label for="phone3">{{ t('phone') }}</label>
       <input formControlName="phone" id="phone3" type="text" />
     </div>
-    <button type="submit">SUBMIT</button>
+    <button type="submit">{{ t('submit') }}</button>
   </form>
 </ng-container>

@@ -1,1 +1,13 @@
-{}
+{
+  "changeToDutch": "Wissel taal naar Nederlands",
+  "changeToEnglish": "Set language to English",
+  "header": "Example translation validation",
+  "explanatory": "The following forms will trigger the validation (messages) on submit, blur and change respectively.",
+  "onSubmit": "On submit",
+  "name": "First and last name please",
+  "email": "Email (name@example.com)",
+  "phone": "Phone number with country code (e.g. +31612345678)",
+  "submit": "Submit",
+  "onBlur": "On blur",
+  "onChange": "On change (default form behavior)"
+}

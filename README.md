@@ -1,10 +1,10 @@
 # Translation validation
 > Automatic validation messages for Angular forms in any language
 
-[![GitHub Release](https://img.shields.io/github/v/release/riskchallenger/translation-validation?style=flat-square)]()
-[![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)]()
-[![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)]()
-[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)]()
+[![GitHub Release](https://img.shields.io/github/v/release/riskchallenger/translation-validation?style=flat-square)](https://github.com/RiskChallenger/translation-validation/releases)
+[![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)](https://github.com/RiskChallenger/translation-validation/blob/main/LICENSE)
+[![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](https://commitizen.github.io/cz-cli/)
+[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/RiskChallenger/translation-validation/blob/main/CONTRIBUTING.md)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![All Contributors](https://img.shields.io/github/contributors/riskchallenger/translation-validation?color=orange&style=flat-square)](#contributors-)
 
@@ -18,10 +18,13 @@ We got tired of having to write code to display validation messages whenever a f
 ⚠️ WIP: translates using [ngx-translate](https://github.com/ngx-translate/core)
 
 ## Table of Contents
-
+- [Blog posts](#blog-posts)
 - [Installation](#installation)
 - [Usage](#usage)
 - [FAQ](#faq)
+
+# Blog posts
+- [Translation validation for Angular - automatic validation messages translated](https://dev.to/langstra/translation-validation-automatic-validation-messages-translated-17ng)
 
 # Installation
 
