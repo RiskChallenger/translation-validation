@@ -1,3 +1,11 @@
+## [1.0.5](https://github.com/RiskChallenger/translation-validation/compare/v1.0.4...v1.0.5) (2021-07-28)
+
+
+### Bug Fixes
+
+* support parameters in translation strings ([0ca6190](https://github.com/RiskChallenger/translation-validation/commit/0ca6190b2c4bcd05286a4a7773ad664c8bae9e31))
+* update dependencies to latest ([87c69a9](https://github.com/RiskChallenger/translation-validation/commit/87c69a96eff0050dd744f815e83961b1c1c9e647))
+
 ## [1.0.4](https://github.com/RiskChallenger/translation-validation/compare/v1.0.3...v1.0.4) (2021-06-29)
 
 
