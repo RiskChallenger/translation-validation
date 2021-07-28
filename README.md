@@ -78,10 +78,10 @@ And then every [formControlName] or [formControl] element will automatically sho
 ### Internationalization
 To show the validation in the current language of the application we use [Transloco](https://ngneat.github.io/transloco/) by default. It translates a key to a string in the current language of the app. The keys for the validation generates by this packages have the following form:
 ```ts
-scope.scipe.controlName.error
+type.scope.controlName.error
 ```
-* `scope` - Scope of the validation messages. Useful for specifying a directory for the validation messages (default: validation)
-* `scipe` - Group several validation messages to a specific form (default: general)
+* `type` - Name of the validation messages type. Useful for specifying a directory for the validation messages (default: validation)
+* `scope` - Group several validation messages to a specific form/group (default: general)
 * `controlName` - Name of the control on which the validation error occurs
 * `error` - The name of the validation error that occurs
 
@@ -101,22 +101,22 @@ import { NgxTvModule } from 'ngx-translation-validation';
 @NgModule({
   declarations: [AppComponent],
   imports: [NgxTvModule.forRoot({
-      scope: 'validation', 
-      invalidClass: 'invalid-input', 
-      submittedClass: 'form-submitted',
-      errorsComponent: SomeErrorContainerComponent
+      type: 'validation', // default 'validation'
+      defaultScope: 'general',  // default 'general'
+      invalidClass: 'invalid-input', // default undefined
+      submittedClass: 'form-submitted', // default 'ng-submitted'
+      errorsComponent: SomeErrorContainerComponent // default NgxTvContainerComponent
   })],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
-``` 
-* `scope` - Scope of the validation messages. Useful for specifying a directory for the validation messages (default: validation)
+```
 * `invalidClass` - Class that is added to a formControl element when the control is invalid. Can be used for custom styling when you do not want to use `ng-invalid` (default: undefined)
 * `submittedClass` - Class that is added to the formGroup element when it is submitted. Can be used in combination with ng-invalid to style elements when invalid and the form is submitted (default: 'ng-submitted')
 * `errorsComponent` - Component in which the error message is rendered. If you want to use a custom component, please sure to extend the default (default: `NgxTvContainerComponent`)
 
 #### Configure scope
-To specify to what scipe validation messages belong you can use the `ngxTvScope` directive.
+To specify to what scope validation messages belong you can use the `ngxTvScope` directive.
 
 ### Styling
 By default the ngx-tv-container-component gets injected right after the formControl element. So you html would look something like this:

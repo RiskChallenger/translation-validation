@@ -29,7 +29,7 @@ export class NgxTvDirective implements OnInit, OnDestroy {
   submit$!: Observable<Event>;
   container!: ViewContainerRef;
   blur$!: Observable<Event>;
-  context: string | undefined;
+  scope: string | undefined;
 
   statusChangesObservable!: Subscription;
 
@@ -57,7 +57,7 @@ export class NgxTvDirective implements OnInit, OnDestroy {
       ) ?? EMPTY;
     this.blur$ = !this.form?.onSubmit ? fromEvent(this.element, 'blur').pipe(shareReplay(1)) : EMPTY;
     this.container = this.controlErrorContainer?.vcr ?? this.vcr;
-    this.context = this.controlErrorContext?.scope ?? this.config.defaultScope;
+    this.scope = this.controlErrorContext?.scope ?? this.config.defaultScope;
 
     this.statusChangesObservable = merge(this.submit$, this.blur$, this.controlDir.statusChanges || EMPTY).subscribe(
       () => {
@@ -65,7 +65,7 @@ export class NgxTvDirective implements OnInit, OnDestroy {
         if (controlErrors) {
           const firstKey = Object.keys(controlErrors)[0];
           const parameters = Object.values(controlErrors)[0];
-          this.setError(`${this.config.type}.${this.context}.${this.controlDir.name}.${firstKey}`, parameters);
+          this.setError(`${this.config.type}.${this.scope}.${this.controlDir.name}.${firstKey}`, parameters);
         } else if (this.ref) {
           this.setError(null);
         }
