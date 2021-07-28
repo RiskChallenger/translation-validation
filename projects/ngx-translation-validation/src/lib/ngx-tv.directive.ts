@@ -64,7 +64,8 @@ export class NgxTvDirective implements OnInit, OnDestroy {
         const controlErrors = this.controlDir.errors;
         if (controlErrors) {
           const firstKey = Object.keys(controlErrors)[0];
-          this.setError(`${this.config.type}.${this.context}.${this.controlDir.name}.${firstKey}`);
+          const parameters = Object.values(controlErrors)[0];
+          this.setError(`${this.config.type}.${this.context}.${this.controlDir.name}.${firstKey}`, parameters);
         } else if (this.ref) {
           this.setError(null);
         }
@@ -88,7 +89,7 @@ export class NgxTvDirective implements OnInit, OnDestroy {
     }
   }
 
-  private setError(errorText: string | null): void {
+  private setError(errorText: string | null, parameters?: Record<string, number | string>): void {
     if (!this.ref && errorText) {
       const factory = this.resolver.resolveComponentFactory(this.config.errorsComponent);
       this.ref = this.container.createComponent(factory);
@@ -97,6 +98,7 @@ export class NgxTvDirective implements OnInit, OnDestroy {
 
     if (this.ref && errorText) {
       this.ref.instance.text = errorText;
+      this.ref.instance.parameters = parameters;
     }
 
     if (this.ref && errorText === null) {

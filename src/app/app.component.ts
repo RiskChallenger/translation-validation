@@ -12,7 +12,7 @@ export class AppComponent {
     {
       name: ['', Validators.required],
       email: ['', Validators.email],
-      phone: ['', Validators.required],
+      phone: ['', [Validators.required, Validators.maxLength(12)]],
     },
     {
       updateOn: 'submit',
@@ -23,7 +23,7 @@ export class AppComponent {
     {
       name: ['', Validators.required],
       email: ['', Validators.email],
-      phone: ['', Validators.required],
+      phone: ['', [Validators.required, Validators.maxLength(12)]],
     },
     {
       updateOn: 'blur',
@@ -34,7 +34,7 @@ export class AppComponent {
     {
       name: ['', Validators.required],
       email: ['', Validators.email],
-      phone: ['', Validators.required],
+      phone: ['', [Validators.required, Validators.maxLength(12)]],
     },
     {
       updateOn: 'change',
