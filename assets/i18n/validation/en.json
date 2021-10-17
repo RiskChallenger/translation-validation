@@ -2,11 +2,13 @@
   "general": {
     "name.required": "General name is required",
     "phone.required": "General phone is required",
+    "phone.maxlength": "General phone number cannot be more than {{requiredLength}} digits",
     "email.email": "General email is invalid"
   },
   "submit": {
     "name.required": "Submit name is required",
     "phone.required": "Submit phone is required",
+    "phone.maxlength": "Submit phone number cannot be more than {{requiredLength}} digits",
     "email.email": "Submit email is invalid"
   }
 }
