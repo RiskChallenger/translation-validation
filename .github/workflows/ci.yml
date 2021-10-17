@@ -34,6 +34,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Release to GitHub Pages
-        run: yarn deploy
+        run: yarn deploy --no-silent
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
