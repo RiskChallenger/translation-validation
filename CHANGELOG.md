@@ -1,3 +1,103 @@
+## [1.0.6](https://github.com/RiskChallenger/translation-validation/compare/v1.0.5...v1.0.6) (2021-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v12.2.11 ([a9b7c80](https://github.com/RiskChallenger/translation-validation/commit/a9b7c806a3c205667eee96d52e1d7238b9a73a3e))
+* recreate the yarn.lock which was corrupted ([b2a847e](https://github.com/RiskChallenger/translation-validation/commit/b2a847ea5d11ee8773e8fa0b3909fe2593cc50cc))
+* update dependencies ([deecda1](https://github.com/RiskChallenger/translation-validation/commit/deecda18e4ff2f0805bb5d9f367ab092fe9c68f2))
+* update dependencies ([ae02c8f](https://github.com/RiskChallenger/translation-validation/commit/ae02c8ffc383d838d610975177d8f8d010d970a9))
+
+## [1.0.6](https://github.com/RiskChallenger/translation-validation/compare/v1.0.5...v1.0.6) (2021-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v12.2.11 ([a9b7c80](https://github.com/RiskChallenger/translation-validation/commit/a9b7c806a3c205667eee96d52e1d7238b9a73a3e))
+* recreate the yarn.lock which was corrupted ([b2a847e](https://github.com/RiskChallenger/translation-validation/commit/b2a847ea5d11ee8773e8fa0b3909fe2593cc50cc))
+* update dependencies ([deecda1](https://github.com/RiskChallenger/translation-validation/commit/deecda18e4ff2f0805bb5d9f367ab092fe9c68f2))
+* update dependencies ([ae02c8f](https://github.com/RiskChallenger/translation-validation/commit/ae02c8ffc383d838d610975177d8f8d010d970a9))
+
+## [1.0.6](https://github.com/RiskChallenger/translation-validation/compare/v1.0.5...v1.0.6) (2021-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v12.2.11 ([a9b7c80](https://github.com/RiskChallenger/translation-validation/commit/a9b7c806a3c205667eee96d52e1d7238b9a73a3e))
+* recreate the yarn.lock which was corrupted ([b2a847e](https://github.com/RiskChallenger/translation-validation/commit/b2a847ea5d11ee8773e8fa0b3909fe2593cc50cc))
+* update dependencies ([deecda1](https://github.com/RiskChallenger/translation-validation/commit/deecda18e4ff2f0805bb5d9f367ab092fe9c68f2))
+* update dependencies ([ae02c8f](https://github.com/RiskChallenger/translation-validation/commit/ae02c8ffc383d838d610975177d8f8d010d970a9))
+
+## [1.0.6](https://github.com/RiskChallenger/translation-validation/compare/v1.0.5...v1.0.6) (2021-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v12.2.11 ([a9b7c80](https://github.com/RiskChallenger/translation-validation/commit/a9b7c806a3c205667eee96d52e1d7238b9a73a3e))
+* recreate the yarn.lock which was corrupted ([b2a847e](https://github.com/RiskChallenger/translation-validation/commit/b2a847ea5d11ee8773e8fa0b3909fe2593cc50cc))
+* update dependencies ([deecda1](https://github.com/RiskChallenger/translation-validation/commit/deecda18e4ff2f0805bb5d9f367ab092fe9c68f2))
+* update dependencies ([ae02c8f](https://github.com/RiskChallenger/translation-validation/commit/ae02c8ffc383d838d610975177d8f8d010d970a9))
+
+## [1.0.6](https://github.com/RiskChallenger/translation-validation/compare/v1.0.5...v1.0.6) (2021-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v12.2.11 ([a9b7c80](https://github.com/RiskChallenger/translation-validation/commit/a9b7c806a3c205667eee96d52e1d7238b9a73a3e))
+* recreate the yarn.lock which was corrupted ([b2a847e](https://github.com/RiskChallenger/translation-validation/commit/b2a847ea5d11ee8773e8fa0b3909fe2593cc50cc))
+* update dependencies ([deecda1](https://github.com/RiskChallenger/translation-validation/commit/deecda18e4ff2f0805bb5d9f367ab092fe9c68f2))
+* update dependencies ([ae02c8f](https://github.com/RiskChallenger/translation-validation/commit/ae02c8ffc383d838d610975177d8f8d010d970a9))
+
+## [1.0.6](https://github.com/RiskChallenger/translation-validation/compare/v1.0.5...v1.0.6) (2021-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v12.2.11 ([a9b7c80](https://github.com/RiskChallenger/translation-validation/commit/a9b7c806a3c205667eee96d52e1d7238b9a73a3e))
+* recreate the yarn.lock which was corrupted ([b2a847e](https://github.com/RiskChallenger/translation-validation/commit/b2a847ea5d11ee8773e8fa0b3909fe2593cc50cc))
+* update dependencies ([deecda1](https://github.com/RiskChallenger/translation-validation/commit/deecda18e4ff2f0805bb5d9f367ab092fe9c68f2))
+* update dependencies ([ae02c8f](https://github.com/RiskChallenger/translation-validation/commit/ae02c8ffc383d838d610975177d8f8d010d970a9))
+
+## [1.0.6](https://github.com/RiskChallenger/translation-validation/compare/v1.0.5...v1.0.6) (2021-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v12.2.11 ([a9b7c80](https://github.com/RiskChallenger/translation-validation/commit/a9b7c806a3c205667eee96d52e1d7238b9a73a3e))
+* recreate the yarn.lock which was corrupted ([b2a847e](https://github.com/RiskChallenger/translation-validation/commit/b2a847ea5d11ee8773e8fa0b3909fe2593cc50cc))
+* update dependencies ([deecda1](https://github.com/RiskChallenger/translation-validation/commit/deecda18e4ff2f0805bb5d9f367ab092fe9c68f2))
+* update dependencies ([ae02c8f](https://github.com/RiskChallenger/translation-validation/commit/ae02c8ffc383d838d610975177d8f8d010d970a9))
+
+## [1.0.6](https://github.com/RiskChallenger/translation-validation/compare/v1.0.5...v1.0.6) (2021-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v12.2.11 ([a9b7c80](https://github.com/RiskChallenger/translation-validation/commit/a9b7c806a3c205667eee96d52e1d7238b9a73a3e))
+* recreate the yarn.lock which was corrupted ([b2a847e](https://github.com/RiskChallenger/translation-validation/commit/b2a847ea5d11ee8773e8fa0b3909fe2593cc50cc))
+* update dependencies ([deecda1](https://github.com/RiskChallenger/translation-validation/commit/deecda18e4ff2f0805bb5d9f367ab092fe9c68f2))
+* update dependencies ([ae02c8f](https://github.com/RiskChallenger/translation-validation/commit/ae02c8ffc383d838d610975177d8f8d010d970a9))
+
+## [1.0.6](https://github.com/RiskChallenger/translation-validation/compare/v1.0.5...v1.0.6) (2021-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v12.2.11 ([a9b7c80](https://github.com/RiskChallenger/translation-validation/commit/a9b7c806a3c205667eee96d52e1d7238b9a73a3e))
+* recreate the yarn.lock which was corrupted ([b2a847e](https://github.com/RiskChallenger/translation-validation/commit/b2a847ea5d11ee8773e8fa0b3909fe2593cc50cc))
+* update dependencies ([deecda1](https://github.com/RiskChallenger/translation-validation/commit/deecda18e4ff2f0805bb5d9f367ab092fe9c68f2))
+* update dependencies ([ae02c8f](https://github.com/RiskChallenger/translation-validation/commit/ae02c8ffc383d838d610975177d8f8d010d970a9))
+
+## [1.0.6](https://github.com/RiskChallenger/translation-validation/compare/v1.0.5...v1.0.6) (2021-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v12.2.11 ([a9b7c80](https://github.com/RiskChallenger/translation-validation/commit/a9b7c806a3c205667eee96d52e1d7238b9a73a3e))
+* recreate the yarn.lock which was corrupted ([b2a847e](https://github.com/RiskChallenger/translation-validation/commit/b2a847ea5d11ee8773e8fa0b3909fe2593cc50cc))
+* update dependencies ([deecda1](https://github.com/RiskChallenger/translation-validation/commit/deecda18e4ff2f0805bb5d9f367ab092fe9c68f2))
+* update dependencies ([ae02c8f](https://github.com/RiskChallenger/translation-validation/commit/ae02c8ffc383d838d610975177d8f8d010d970a9))
+
 ## [1.0.5](https://github.com/RiskChallenger/translation-validation/compare/v1.0.4...v1.0.5) (2021-07-28)
 
 
