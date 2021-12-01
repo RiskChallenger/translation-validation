@@ -21,6 +21,7 @@ We got tired of having to write code to display validation messages whenever a f
 - [Blog posts](#blog-posts)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Versioning](#versioning)
 - [FAQ](#faq)
 
 # Blog posts
@@ -140,6 +141,14 @@ But if you'd like the container to appear in a parent of the controlForm you cou
 We welcome you to contribute. This can be done by reporting issues or feature requests. Even better is to not only report issues or feature requests, but then also to pick those issues up yourself.
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on the process for submitting pull requests to us.
+
+## Versioning
+
+| Library version | Angular version |
+|:---------------:|:---------------:|
+| 2.x             | 13.x            |
+| 1.x             | 12.x            |
+
 
 ## FAQ
 
