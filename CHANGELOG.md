@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/RiskChallenger/translation-validation/compare/v1.0.7...v1.1.0) (2021-12-01)
+
+
+### Features
+
+* upgrade angular to 13 ([5303b63](https://github.com/RiskChallenger/translation-validation/commit/5303b63c7a8c7d7bdd6f3b62a097d9b18fb66044))
+
 ## [1.0.7](https://github.com/RiskChallenger/translation-validation/compare/v1.0.6...v1.0.7) (2021-10-22)
 
 
