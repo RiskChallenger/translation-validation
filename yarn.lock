@@ -1646,10 +1646,10 @@
   resolved "https://registry.yarnpkg.com/@jridgewell/resolve-uri/-/resolve-uri-1.0.0.tgz#3fdf5798f0b49e90155896f6291df186eac06c83"
   integrity sha512-9oLAnygRMi8Q5QkYEU4XWK04B+nuoXoxjRvRxgjuChkLZFBja0YPSgdZ7dZtwhncLBcQe/I/E+fLuk5qxcYVJA==
 
-"@ngneat/lib@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ngneat/lib/-/lib-3.0.0.tgz#de7b26067ccdffd38625fab4d098004b18252ef2"
-  integrity sha512-Xf2aasdiXoj/cgyBsDcMdYQ4OGL6BQtljdpO5JnjTCnRjbrp887juv2LtCjIywAV3hm+CGyjL9SetwzmGvwTbQ==
+"@ngneat/lib@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@ngneat/lib/-/lib-3.0.1.tgz#3437a9282d76d5d2406174b51f90fd714de2dd73"
+  integrity sha512-kHI6NYM+7xu6VGNQZiY3xNP74IBFV1D/uPcEcbs1waCQUqzsSfxKvRJ4kGQI6ON8tU/8YN2O78C4uR3itxRQ2g==
   dependencies:
     "@angular-devkit/core" "^12.1.0"
     "@angular-devkit/schematics" "^12.1.0"
