@@ -6291,7 +6291,12 @@ istanbul-reports@^3.0.0:
     html-escaper "^2.0.0"
     istanbul-lib-report "^3.0.0"
 
-jasmine-core@3.10.0, jasmine-core@^3.6.0:
+jasmine-core@3.99.1:
+  version "3.99.1"
+  resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.99.1.tgz#5bfa4b2d76618868bfac4c8ff08bb26fffa4120d"
+  integrity sha512-Hu1dmuoGcZ7AfyynN3LsfruwMbxMALMka+YtZeGoLuDEySVmVAPaonkNoBRIw/ectu8b9tVQCJNgp4a4knp+tg==
+
+jasmine-core@^3.6.0:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.10.0.tgz#1e3e4053d954eb6d0bfbb3eb859bb21a5655de45"
   integrity sha512-XWGaJ25RUdOQnjGiLoQa9QG/R4u1e9Bk4uhLdn9F4JCBco84L4SKM52bxci4vWTSUzhmhuHNAkAHFN/6Cox9wQ==
