@@ -9,7 +9,7 @@ import { HashMap } from '@ngneat/transloco';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NgxTvContainerComponent {
-  componentText?: string;
+  componentText = '';
   componentHide = true;
   componentParameters?: HashMap;
 

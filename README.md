@@ -146,7 +146,7 @@ Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on the process for 
 
 | Library version | Angular version |
 |:---------------:|:---------------:|
-| 2.x             | 13.x            |
+| 13.x            | 13.x            |
 | 1.x             | 12.x            |
 
 
