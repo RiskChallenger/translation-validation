@@ -1,3 +1,15 @@
+# [13.0.0](https://github.com/RiskChallenger/translation-validation/compare/v12.0.0...v13.0.0) (2022-05-24)
+
+
+### Features
+
+* update all dependencies and force ivy ([b2d0880](https://github.com/RiskChallenger/translation-validation/commit/b2d0880c586617d7dfca58eea6d91fa28bbce632))
+
+
+### BREAKING CHANGES
+
+* Ivy
+
 # [2.0.0](https://github.com/RiskChallenger/translation-validation/compare/v1.0.7...v2.0.0) (2021-12-01)
 
 
