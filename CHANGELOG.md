@@ -1,3 +1,10 @@
+## [13.0.1](https://github.com/RiskChallenger/translation-validation/compare/v13.0.0...v13.0.1) (2022-06-02)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v13.3.11 ([d33269f](https://github.com/RiskChallenger/translation-validation/commit/d33269fc663d89fc6905c585e222285d55503a16))
+
 # [13.0.0](https://github.com/RiskChallenger/translation-validation/compare/v12.0.0...v13.0.0) (2022-05-24)
 
 
