@@ -1,3 +1,11 @@
+## [13.0.2](https://github.com/RiskChallenger/translation-validation/compare/v13.0.1...v13.0.2) (2022-07-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @ngneat/transloco to v4.1.1 ([c63f68b](https://github.com/RiskChallenger/translation-validation/commit/c63f68b4da82b859c7a5f0be5cd927979615f1e8))
+* **deps:** update dependency zone.js to v0.11.6 ([a27a737](https://github.com/RiskChallenger/translation-validation/commit/a27a73701b589033f36cdab35f0aff03a16f2192))
+
 ## [13.0.1](https://github.com/RiskChallenger/translation-validation/compare/v13.0.0...v13.0.1) (2022-06-02)
 
 
