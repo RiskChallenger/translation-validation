@@ -70,7 +70,7 @@
     "ngx-build-plus": "13.0.1",
     "prettier": "2.6.2",
     "protractor": "7.0.0",
-    "semantic-release": "19.0.2",
+    "semantic-release": "19.0.3",
     "standard-version": "9.5.0",
     "ts-node": "10.8.0",
     "tslint": "6.1.3",
