@@ -2767,10 +2767,10 @@
     stringify-object "^3.3.0"
     typescript "~4.3.2"
 
-"@ngneat/spectator@10.0.1":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/@ngneat/spectator/-/spectator-10.0.1.tgz#d1c0e55d909ee6e4af59c6e94027137d600bb4af"
-  integrity sha512-ukyEYoK/wCIpe8IFHR+Lx7NfcBzFuYWsvwyFgRbIAinBDyqmzCarr9DKm1n3UejLIuVR3vJakumfHhdblhEmEw==
+"@ngneat/spectator@11.2.0":
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/@ngneat/spectator/-/spectator-11.2.0.tgz#87d9d372ad5414564ac4101cebe3f094e869d137"
+  integrity sha512-wvpiWAibbQy433Pzg+560LPlz2ia/SNfu1DPMuz+CfJaw540Varuh6FyAywQkkX+Q09jVOloqSx9iAIDkXOWSw==
   dependencies:
     "@testing-library/dom" "^8.11.0"
     jquery "3.6.0"
