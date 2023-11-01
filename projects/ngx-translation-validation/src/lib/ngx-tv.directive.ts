@@ -21,7 +21,7 @@ import { NgxTvScopeDirective } from './ngx-tv-scope.directive';
 import { NGX_TV_CONFIG, NgxTvConfig } from './ngx-tv.config';
 
 @Directive({
-  // tslint:disable-next-line:directive-selector
+  // eslint-disable-next-line @angular-eslint/directive-selector
   selector: '[formControl], [formControlName]',
 })
 export class NgxTvDirective implements OnInit, OnDestroy {
@@ -41,7 +41,7 @@ export class NgxTvDirective implements OnInit, OnDestroy {
     @Inject(NGX_TV_CONFIG) private config: NgxTvConfig,
     @Optional() @Host() private controlErrorContainer?: NgxTvContainerDirective,
     @Optional() @Host() private controlErrorContext?: NgxTvScopeDirective,
-    @Optional() @Host() private form?: NgxTvFormDirective
+    @Optional() @Host() private form?: NgxTvFormDirective,
   ) {}
 
   get element(): HTMLFormElement {
@@ -53,7 +53,7 @@ export class NgxTvDirective implements OnInit, OnDestroy {
       this.form?.submit$.pipe(
         tap(() => {
           this.form?.addSubmittedClass();
-        })
+        }),
       ) ?? EMPTY;
     this.blur$ = !this.form?.onSubmit ? fromEvent(this.element, 'blur').pipe(shareReplay(1)) : EMPTY;
     this.container = this.controlErrorContainer?.vcr ?? this.vcr;
@@ -69,7 +69,7 @@ export class NgxTvDirective implements OnInit, OnDestroy {
         } else if (this.ref) {
           this.setError(null);
         }
-      }
+      },
     );
   }
 
