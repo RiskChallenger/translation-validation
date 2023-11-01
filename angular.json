@@ -114,6 +114,12 @@
             "name": "Langstra",
             "email": "wybren@riskchallenger.nl"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+          }
         }
       }
     },
@@ -141,6 +147,15 @@
             "main": "projects/ngx-translation-validation/src/test.ts",
             "tsConfig": "projects/ngx-translation-validation/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-translation-validation/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-translation-validation/**/*.ts",
+              "projects/ngx-translation-validation/**/*.html"
+            ]
           }
         }
       }

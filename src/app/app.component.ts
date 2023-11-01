@@ -16,7 +16,7 @@ export class AppComponent {
     },
     {
       updateOn: 'submit',
-    }
+    },
   );
 
   formOnBlur = this.formBuilder.group(
@@ -27,7 +27,7 @@ export class AppComponent {
     },
     {
       updateOn: 'blur',
-    }
+    },
   );
 
   formOnChange = this.formBuilder.group(
@@ -38,12 +38,17 @@ export class AppComponent {
     },
     {
       updateOn: 'change',
-    }
+    },
   );
 
-  constructor(private formBuilder: UntypedFormBuilder, private transloco: TranslocoService) {}
+  constructor(
+    private formBuilder: UntypedFormBuilder,
+    private transloco: TranslocoService,
+  ) {}
 
-  onSubmit(): void {}
+  onSubmit(): void {
+    // Intentionally left blank to trigger validation
+  }
 
   changeLang(locale: 'nl' | 'en'): void {
     this.transloco.setActiveLang(locale);

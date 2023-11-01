@@ -25,7 +25,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain(
-      'angular-localized-validation-messages app is running!'
+      'angular-localized-validation-messages app is running!',
     );
   });
 });
