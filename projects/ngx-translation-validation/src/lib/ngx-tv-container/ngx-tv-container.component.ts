@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from '@a
 import { HashMap } from '@ngneat/transloco';
 
 @Component({
-  // tslint:disable-next-line:component-selector
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'ngx-tv-container',
   templateUrl: './ngx-tv-container.component.html',
   styleUrls: ['./ngx-tv-container.component.scss'],

@@ -21,8 +21,8 @@ jobs:
 
       - name: Install
         run: |
-            yarn config set ignore-engines true
-            yarn
+          yarn config set ignore-engines true
+          yarn
 
       - name: Build Step
         run: yarn build:lib

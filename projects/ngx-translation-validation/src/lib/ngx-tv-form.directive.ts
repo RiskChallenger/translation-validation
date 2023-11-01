@@ -3,7 +3,7 @@ import { FormGroupDirective } from '@angular/forms';
 import { NGX_TV_CONFIG, NgxTvConfig } from './ngx-tv.config';
 
 @Directive({
-  // tslint:disable-next-line:directive-selector
+  // eslint-disable-next-line @angular-eslint/directive-selector
   selector: '[formGroup]',
 })
 export class NgxTvFormDirective {
@@ -12,7 +12,7 @@ export class NgxTvFormDirective {
   constructor(
     private host: ElementRef<HTMLFormElement>,
     private hostFormGroup: FormGroupDirective,
-    @Inject(NGX_TV_CONFIG) private config: NgxTvConfig
+    @Inject(NGX_TV_CONFIG) private config: NgxTvConfig,
   ) {}
 
   get onBlur(): boolean {

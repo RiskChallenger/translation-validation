@@ -1,4 +1,5 @@
 # Translation validation
+
 > Automatic validation messages for Angular forms in any language
 
 [![GitHub Release](https://img.shields.io/github/v/release/riskchallenger/translation-validation?style=flat-square)](https://github.com/RiskChallenger/translation-validation/releases)
@@ -13,11 +14,12 @@ We got tired of having to write code to display validation messages whenever a f
 ## Features
 
 ✅ Custom error component  
-✅ Show validation message on change, blur or submit     
-✅ Translates using [Transloco](https://ngneat.github.io/transloco/)    
+✅ Show validation message on change, blur or submit  
+✅ Translates using [Transloco](https://ngneat.github.io/transloco/)  
 ⚠️ WIP: translates using [ngx-translate](https://github.com/ngx-translate/core)
 
 ## Table of Contents
+
 - [Blog posts](#blog-posts)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -25,6 +27,7 @@ We got tired of having to write code to display validation messages whenever a f
 - [FAQ](#faq)
 
 # Blog posts
+
 - [Translation validation for Angular - automatic validation messages translated](https://dev.to/langstra/translation-validation-automatic-validation-messages-translated-17ng)
 
 # Installation
@@ -34,13 +37,14 @@ From your project folder, run:
 ```shell
 yarn add ngx-translation-validation
 ```
+
 or
+
 ```shell
 npm install --save ngx-translation-validation
 ```
 
 Also add transloco to your project if you haven't done so yet. [Add transloco to your project](https://ngneat.github.io/transloco/docs/installation)
-
 
 This command will import the `NgxTvModule.forRoot()` in your `AppModule`:
 
@@ -50,24 +54,28 @@ import { NgxTvModule } from 'ngx-translation-validation';
 @NgModule({
   declarations: [AppComponent],
   imports: [NgxTvModule.forRoot()],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
-``` 
+```
 
 ## Usage
+
 To get started simply import the `NgxTvModule` in the module of the component you want to have validation messages.
+
 ```ts
 import { NgxTvModule } from 'ngx-translation-validation';
 
 @NgModule({
   declarations: [UserComponent],
   imports: [NgxTvModule],
-  bootstrap: [UserComponent]
+  bootstrap: [UserComponent],
 })
 export class UserModule {}
-``` 
+```
+
 And then every [formControlName] or [formControl] element will automatically show validation messages when it is invalid.
+
 ```angular2html
 <form [formGroup]="form">
     <div class="form-group">
@@ -76,56 +84,70 @@ And then every [formControlName] or [formControl] element will automatically sho
     </div>
 </form>
 ```
+
 ### Internationalization
+
 To show the validation in the current language of the application we use [Transloco](https://ngneat.github.io/transloco/) by default. It translates a key to a string in the current language of the app. The keys for the validation generates by this packages have the following form:
+
 ```ts
-type.scope.controlName.error
+type.scope.controlName.error;
 ```
-* `type` - Name of the validation messages type. Useful for specifying a directory for the validation messages (default: validation)
-* `scope` - Group several validation messages to a specific form/group (default: general)
-* `controlName` - Name of the control on which the validation error occurs
-* `error` - The name of the validation error that occurs
+
+- `type` - Name of the validation messages type. Useful for specifying a directory for the validation messages (default: validation)
+- `scope` - Group several validation messages to a specific form/group (default: general)
+- `controlName` - Name of the control on which the validation error occurs
+- `error` - The name of the validation error that occurs
 
 Examples
-```ts
-validation.general.name.required
-validation.general.email.email
 
-validation.organizationForm.name.required
+```ts
+validation.general.name.required;
+validation.general.email.email;
+
+validation.organizationForm.name.required;
 ```
 
 ### Configuration
+
 To customize the behavior of the plugin you can pass an object the the `forRoot()` method.
+
 ```ts
 import { NgxTvModule } from 'ngx-translation-validation';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [NgxTvModule.forRoot({
+  imports: [
+    NgxTvModule.forRoot({
       type: 'validation', // default 'validation'
-      defaultScope: 'general',  // default 'general'
+      defaultScope: 'general', // default 'general'
       invalidClass: 'invalid-input', // default undefined
       submittedClass: 'form-submitted', // default 'ng-submitted'
-      errorsComponent: SomeErrorContainerComponent // default NgxTvContainerComponent
-  })],
-  bootstrap: [AppComponent]
+      errorsComponent: SomeErrorContainerComponent, // default NgxTvContainerComponent
+    }),
+  ],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
 ```
-* `invalidClass` - Class that is added to a formControl element when the control is invalid. Can be used for custom styling when you do not want to use `ng-invalid` (default: undefined)
-* `submittedClass` - Class that is added to the formGroup element when it is submitted. Can be used in combination with ng-invalid to style elements when invalid and the form is submitted (default: 'ng-submitted')
-* `errorsComponent` - Component in which the error message is rendered. If you want to use a custom component, please sure to extend the default (default: `NgxTvContainerComponent`)
+
+- `invalidClass` - Class that is added to a formControl element when the control is invalid. Can be used for custom styling when you do not want to use `ng-invalid` (default: undefined)
+- `submittedClass` - Class that is added to the formGroup element when it is submitted. Can be used in combination with ng-invalid to style elements when invalid and the form is submitted (default: 'ng-submitted')
+- `errorsComponent` - Component in which the error message is rendered. If you want to use a custom component, please sure to extend the default (default: `NgxTvContainerComponent`)
 
 #### Configure scope
+
 To specify to what scope validation messages belong you can use the `ngxTvScope` directive.
 
 ### Styling
+
 By default the ngx-tv-container-component gets injected right after the formControl element. So you html would look something like this:
+
 ```html
-<input type="text">
-<ngx-tv-container-component></ngx-tv-container-component>
-``` 
+<input type="text" /> <ngx-tv-container-component></ngx-tv-container-component>
+```
+
 But if you'd like the container to appear in a parent of the controlForm you could specify the location of the container with the `ngxTvContainer` directive.
+
 ```angular2html
 <form [formGroup]="form" ngxTvContainer>
     <div class="form-group">
@@ -138,6 +160,7 @@ But if you'd like the container to appear in a parent of the controlForm you cou
 ```
 
 ## Contribute
+
 We welcome you to contribute. This can be done by reporting issues or feature requests. Even better is to not only report issues or feature requests, but then also to pick those issues up yourself.
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on the process for submitting pull requests to us.
@@ -145,10 +168,9 @@ Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on the process for 
 ## Versioning
 
 | Library version | Angular version |
-|:---------------:|:---------------:|
-| 13.x            | 13.x            |
-| 1.x             | 12.x            |
-
+| :-------------: | :-------------: |
+|      13.x       |      13.x       |
+|       1.x       |      12.x       |
 
 ## FAQ
 

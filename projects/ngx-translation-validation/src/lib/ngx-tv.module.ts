@@ -27,7 +27,6 @@ export function getConfig(config?: Partial<NgxTvConfig>): NgxTvConfig {
     NgxTvContainerDirective,
     NgxTvScopeDirective,
   ],
-  entryComponents: [NgxTvContainerComponent],
   imports: [CommonModule, TranslocoModule],
   exports: [NgxTvDirective, NgxTvFormDirective, NgxTvContainerComponent, NgxTvContainerDirective, NgxTvScopeDirective],
 })
