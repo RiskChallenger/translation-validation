@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormBuilder, Validators } from '@angular/forms';
 import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
@@ -41,7 +41,7 @@ export class AppComponent {
     }
   );
 
-  constructor(private formBuilder: FormBuilder, private transloco: TranslocoService) {}
+  constructor(private formBuilder: UntypedFormBuilder, private transloco: TranslocoService) {}
 
   onSubmit(): void {}
 
