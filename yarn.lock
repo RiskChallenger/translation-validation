@@ -3981,7 +3981,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ngneat/transloco-utils@npm:^3.0.1, @ngneat/transloco-utils@npm:^3.0.2":
+"@ngneat/transloco-utils@npm:3.0.5":
+  version: 3.0.5
+  resolution: "@ngneat/transloco-utils@npm:3.0.5"
+  dependencies:
+    cosmiconfig: "npm:^8.1.3"
+    tslib: "npm:^2.3.0"
+  checksum: 10c0/4c01cc89f9ada5a3f1179f9f4bbcababcb6a19ffacf747708b5850135a1dc43c1bda271f804b0c3beb22f97d037882f724bcdff7bf1ea3c38babf4e56be7c7c3
+  languageName: node
+  linkType: hard
+
+"@ngneat/transloco-utils@npm:^3.0.2":
   version: 3.0.2
   resolution: "@ngneat/transloco-utils@npm:3.0.2"
   dependencies:
@@ -3991,11 +4001,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ngneat/transloco@npm:4.1.1":
-  version: 4.1.1
-  resolution: "@ngneat/transloco@npm:4.1.1"
+"@ngneat/transloco@npm:4.3.0":
+  version: 4.3.0
+  resolution: "@ngneat/transloco@npm:4.3.0"
   dependencies:
-    "@ngneat/transloco-utils": "npm:^3.0.1"
+    "@ngneat/transloco-utils": "npm:3.0.5"
     flat: "npm:5.0.2"
     lodash.kebabcase: "npm:^4.1.1"
     ora: "npm:^5.4.1"
@@ -4003,8 +4013,10 @@ __metadata:
     tslib: "npm:^2.2.0"
   peerDependencies:
     "@angular/core": ">=13.0.0"
+    fs-extra: ">=9.1.0"
+    glob: ">=7.1.7"
     rxjs: ">=6.0.0"
-  checksum: 10c0/16cc8fa549e79c283a4b2be712cf5f95148f3f6d596e469c5f3a9cf0958cae15c4986d565070ffed30019e83e932bade22e1245659255f1902d7d80737c65a63
+  checksum: 10c0/5f74d22bbc0981011f522ea4e72ed202e03cfcccc9b6bd60e21f9e1f623131cdf8b27c6c0929973143c5e1f460484cc9e66566f50677c3748506c9af0d9e0ab6
   languageName: node
   linkType: hard
 
@@ -7956,6 +7968,23 @@ __metadata:
     path-type: "npm:^4.0.0"
     yaml: "npm:^1.10.0"
   checksum: 10c0/3cd38525ba22e13da0ef9f4be131df226c94f5b96fb50f6297eb17baeedefe15cf5819f8c73cde69f71cc5034e712c86bd20c7756883dd8094087680ecc25932
+  languageName: node
+  linkType: hard
+
+"cosmiconfig@npm:^8.1.3":
+  version: 8.3.6
+  resolution: "cosmiconfig@npm:8.3.6"
+  dependencies:
+    import-fresh: "npm:^3.3.0"
+    js-yaml: "npm:^4.1.0"
+    parse-json: "npm:^5.2.0"
+    path-type: "npm:^4.0.0"
+  peerDependencies:
+    typescript: ">=4.9.5"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/0382a9ed13208f8bfc22ca2f62b364855207dffdb73dc26e150ade78c3093f1cf56172df2dd460c8caf2afa91c0ed4ec8a88c62f8f9cd1cf423d26506aa8797a
   languageName: node
   linkType: hard
 
@@ -17280,7 +17309,7 @@ __metadata:
     "@commitlint/config-conventional": "npm:19.5.0"
     "@ngneat/lib": "npm:5.0.0"
     "@ngneat/spectator": "npm:19.0.0"
-    "@ngneat/transloco": "npm:4.1.1"
+    "@ngneat/transloco": "npm:4.3.0"
     "@ngneat/transloco-keys-manager": "npm:3.4.1"
     "@semantic-release/changelog": "npm:6.0.3"
     "@semantic-release/git": "npm:10.0.1"
