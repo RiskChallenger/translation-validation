@@ -8910,10 +8910,10 @@ just-diff@^6.0.0:
   resolved "https://registry.yarnpkg.com/just-diff/-/just-diff-6.0.2.tgz#03b65908543ac0521caf6d8eb85035f7d27ea285"
   integrity sha512-S59eriX5u3/QhMNq3v/gm8Kd0w8OS6Tz2FS1NG4blv+z0MuQcBRJyFWjdovM0Rad4/P4aUPFtnkNjMjyMlMSYA==
 
-karma-chrome-launcher@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/karma-chrome-launcher/-/karma-chrome-launcher-3.1.1.tgz#baca9cc071b1562a1db241827257bfe5cab597ea"
-  integrity sha512-hsIglcq1vtboGPAN+DGCISCFOxW+ZVnIqhDQcCMqqCp+4dmJ0Qpq5QAjkbA0X2L9Mi6OBkHi2Srrbmm7pUKkzQ==
+karma-chrome-launcher@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/karma-chrome-launcher/-/karma-chrome-launcher-3.2.0.tgz#eb9c95024f2d6dfbb3748d3415ac9b381906b9a9"
+  integrity sha512-rE9RkUPI7I9mAxByQWkGJFXfFD6lE4gC5nPuZdobf/QdTEJI6EU4yIay/cfU/xV4ZxlM5JiTv7zWYgA64NpS5Q==
   dependencies:
     which "^1.2.1"
 
