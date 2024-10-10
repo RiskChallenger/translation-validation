@@ -59,7 +59,7 @@
     "@types/node": "16.18.113",
     "@typescript-eslint/eslint-plugin": "8.8.1",
     "@typescript-eslint/parser": "8.8.1",
-    "all-contributors-cli": "6.20.0",
+    "all-contributors-cli": "6.26.1",
     "angular-cli-ghpages": "1.0.7",
     "cross-env": "7.0.3",
     "eslint": "^8.49.0",
