@@ -6,7 +6,7 @@ import {
   TRANSLOCO_CONFIG,
   translocoConfig,
   TranslocoModule,
-} from '@ngneat/transloco';
+} from '@jsverse/transloco';
 import { Injectable, NgModule } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
