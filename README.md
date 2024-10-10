@@ -7,7 +7,6 @@
 [![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](https://commitizen.github.io/cz-cli/)
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/RiskChallenger/translation-validation/blob/main/CONTRIBUTING.md)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![All Contributors](https://img.shields.io/github/contributors/riskchallenger/translation-validation?color=orange&style=flat-square)](#contributors-)
 
 We got tired of having to write code to display validation messages whenever a form control was invalid. So instead we wrote a library that automatically injects a component displaying the error message.
 
@@ -171,31 +170,5 @@ Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on the process for 
 | :-------------: | :-------------: |
 |      13.x       |      13.x       |
 |       1.x       |      12.x       |
-
-## FAQ
-
-### How to ...
-
-Nothing has been asked yet. Will update when the time is right.
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://riskchallenger.nl/"><img src="https://avatars.githubusercontent.com/u/1962982?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Wybren Kortstra</b></sub></a><br /><a href="https://github.com/RiskChallenger/ngx-translation-validation/commits?author=Langstra" title="Code">💻</a> <a href="https://github.com/RiskChallenger/ngx-translation-validation/commits?author=Langstra" title="Documentation">📖</a> <a href="#ideas-Langstra" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-Langstra" title="Maintenance">🚧</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 <div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
