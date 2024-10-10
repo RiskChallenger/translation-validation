@@ -3866,10 +3866,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/jasmine@4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-4.0.3.tgz#097ce710d70eb7f3662e96c1f75824dd22c27d5c"
-  integrity sha512-Opp1LvvEuZdk8fSSvchK2mZwhVrsNT0JgJE9Di6MjnaIpmEXM8TLCPPrVtNTYh8+5MPdY8j9bAHMu2SSfwpZJg==
+"@types/jasmine@4.6.4":
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-4.6.4.tgz#76350389d51412047934992bacc40750c69d82a8"
+  integrity sha512-qCw5sVW+ylTnrEhe5kfX4l6MgU9REXIVDa/lWEcvTOUmd+LqDYwyjovDq+Zk9blElaEHOj1URDQ/djEBVRf+pw==
 
 "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   version "7.0.9"
