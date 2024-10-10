@@ -55,7 +55,7 @@
     "@ngneat/transloco-keys-manager": "3.4.1",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@types/jasmine": "4.6.4",
+    "@types/jasmine": "5.1.4",
     "@types/node": "16.18.113",
     "@typescript-eslint/eslint-plugin": "8.8.1",
     "@typescript-eslint/parser": "8.8.1",
