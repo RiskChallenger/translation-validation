@@ -2721,15 +2721,15 @@
     rxjs "^7.5.6"
     typescript "~4.7.4"
 
-"@ngneat/spectator@10.0.1":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/@ngneat/spectator/-/spectator-10.0.1.tgz#d1c0e55d909ee6e4af59c6e94027137d600bb4af"
-  integrity sha512-ukyEYoK/wCIpe8IFHR+Lx7NfcBzFuYWsvwyFgRbIAinBDyqmzCarr9DKm1n3UejLIuVR3vJakumfHhdblhEmEw==
+"@ngneat/spectator@19.0.0":
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/@ngneat/spectator/-/spectator-19.0.0.tgz#e93e7ca49a00adf0cb433e8ba44533db9f7b6db4"
+  integrity sha512-u3G0rpepKuwK9alYDxyTvQ5P8XK6MXiToL36O3Lt1Q3seUT6hkpbkAAGD/pG8r+cY+Wt5zM7P8cF+1m7vWUGUA==
   dependencies:
     "@testing-library/dom" "^8.11.0"
-    jquery "3.6.0"
+    jquery "3.6.4"
     replace-in-file "6.2.0"
-    tslib "^2.1.0"
+    tslib "^2.6.2"
 
 "@ngneat/spectator@^11.1.3":
   version "11.3.0"
@@ -8358,6 +8358,11 @@ jquery@3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
   integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
+
+jquery@3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.4.tgz#ba065c188142100be4833699852bf7c24dc0252f"
+  integrity sha512-v28EW9DWDFpzcD9O5iyJXg3R3+q+mET5JhnjJzQUZMHOv67bpSIHq81GEYpPNZHG+XXHsfSme3nxp/hndKEcsQ==
 
 js-tokens@^4.0.0:
   version "4.0.0"
