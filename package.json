@@ -33,7 +33,7 @@
     "@angular/platform-browser": "18.2.8",
     "@angular/platform-browser-dynamic": "18.2.8",
     "@angular/router": "18.2.8",
-    "@ngneat/lib": "3.0.1",
+    "@ngneat/lib": "5.0.0",
     "@ngneat/transloco": "4.1.1",
     "rxjs": "7.5.5",
     "tslib": "2.4.0",
