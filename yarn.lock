@@ -4436,10 +4436,10 @@ all-contributors-cli@6.20.0:
     pify "^5.0.0"
     yargs "^15.0.1"
 
-angular-cli-ghpages@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/angular-cli-ghpages/-/angular-cli-ghpages-1.0.0.tgz#b03de99b4355ad3d668d8749cfbcc6a9a4c7c07d"
-  integrity sha512-TUmAPOP/a8dzOC0D5juBnxeWQzx7DXz1WNvoOijDpbPGYFcQJKSsnsjk+Wx5aydbXvzS4YuE7Nh2VvfEKlLa+Q==
+angular-cli-ghpages@1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/angular-cli-ghpages/-/angular-cli-ghpages-1.0.7.tgz#2b842be41f598bd0ab7528351e11865e30b057c7"
+  integrity sha512-7uq+NSqmhVBnA1uimVQVoQfXP80aSJc/nZGdRUiADcTeRQFPamaQUbh4bn2EHiC9TJn44lDOEGnzdhAej0wz6w==
   dependencies:
     commander "^3.0.0-0"
     fs-extra "^9.0.1"
