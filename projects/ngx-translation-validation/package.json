@@ -9,7 +9,7 @@
     "@angular/core": ">=16.0.0"
   },
   "dependencies": {
-    "tslib": "2.4.0"
+    "tslib": "2.7.0"
   },
   "keywords": [
     "angular",

@@ -36,7 +36,7 @@
     "@ngneat/lib": "5.0.0",
     "@ngneat/transloco": "4.1.1",
     "rxjs": "7.5.5",
-    "tslib": "2.4.0",
+    "tslib": "2.7.0",
     "zone.js": "0.15.0"
   },
   "devDependencies": {
