@@ -69,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "translation-validation:build"
+            "buildTarget": "translation-validation:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "translation-validation:build:production"
+              "buildTarget": "translation-validation:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "translation-validation:build"
+            "buildTarget": "translation-validation:build"
           }
         },
         "test": {
