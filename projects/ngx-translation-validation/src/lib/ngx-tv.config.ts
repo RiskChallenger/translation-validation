@@ -11,7 +11,6 @@ export interface NgxTvConfig {
 
 export const NGX_TV_CONFIG = new InjectionToken('NGX_TV_CONFIG');
 
-
 export function getConfig(config?: Partial<NgxTvConfig>): NgxTvConfig {
   return {
     type: 'validation',
