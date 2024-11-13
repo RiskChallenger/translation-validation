@@ -8,7 +8,8 @@
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/RiskChallenger/translation-validation/blob/main/CONTRIBUTING.md)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-We got tired of having to write code to display validation messages whenever a form control was invalid. So instead we wrote a library that automatically injects a component displaying the error message.
+We got tired of having to write code to display validation messages whenever a form control was invalid. 
+So instead we wrote a library that automatically injects a component displaying the error message.
 
 ## Features
 
@@ -45,17 +46,18 @@ npm install --save ngx-translation-validation
 
 Also add transloco to your project if you haven't done so yet. [Add transloco to your project](https://ngneat.github.io/transloco/docs/installation)
 
+After this, you will need to register the providers using `provideNgxTv()`
+
 This command will import the `NgxTvModule.forRoot()` in your `AppModule`:
 
 ```ts
-import { NgxTvModule } from 'ngx-translation-validation';
+import {provideNgxTv} from 'ngx-translation-validation';
 
-@NgModule({
-  declarations: [AppComponent],
-  imports: [NgxTvModule.forRoot()],
-  bootstrap: [AppComponent],
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideNgxTv(/* Optionally you can provide a config here **/),
+  ],
 })
-export class AppModule {}
 ```
 
 ## Usage
@@ -63,24 +65,26 @@ export class AppModule {}
 To get started simply import the `NgxTvModule` in the module of the component you want to have validation messages.
 
 ```ts
-import { NgxTvModule } from 'ngx-translation-validation';
+import {NgxTvModule} from 'ngx-translation-validation';
 
 @NgModule({
   declarations: [UserComponent],
   imports: [NgxTvModule],
   bootstrap: [UserComponent],
 })
-export class UserModule {}
+export class UserModule {
+}
 ```
 
 And then every [formControlName] or [formControl] element will automatically show validation messages when it is invalid.
 
 ```angular2html
+
 <form [formGroup]="form">
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input formControlName="name" id="name" type="text">
-    </div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input formControlName="name" id="name" type="text">
+  </div>
 </form>
 ```
 
@@ -111,12 +115,11 @@ validation.organizationForm.name.required;
 To customize the behavior of the plugin you can pass an object the the `forRoot()` method.
 
 ```ts
-import { NgxTvModule } from 'ngx-translation-validation';
+import {provideNgxTv} from 'ngx-translation-validation';
 
-@NgModule({
-  declarations: [AppComponent],
-  imports: [
-    NgxTvModule.forRoot({
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideNgxTv({
       type: 'validation', // default 'validation'
       defaultScope: 'general', // default 'general'
       invalidClass: 'invalid-input', // default undefined
@@ -124,9 +127,7 @@ import { NgxTvModule } from 'ngx-translation-validation';
       errorsComponent: SomeErrorContainerComponent, // default NgxTvContainerComponent
     }),
   ],
-  bootstrap: [AppComponent],
 })
-export class AppModule {}
 ```
 
 - `invalidClass` - Class that is added to a formControl element when the control is invalid. Can be used for custom styling when you do not want to use `ng-invalid` (default: undefined)
@@ -142,18 +143,20 @@ To specify to what scope validation messages belong you can use the `ngxTvScope`
 By default the ngx-tv-container-component gets injected right after the formControl element. So you html would look something like this:
 
 ```html
-<input type="text" /> <ngx-tv-container-component></ngx-tv-container-component>
+<input type="text"/>
+<ngx-tv-container-component></ngx-tv-container-component>
 ```
 
 But if you'd like the container to appear in a parent of the controlForm you could specify the location of the container with the `ngxTvContainer` directive.
 
 ```angular2html
+
 <form [formGroup]="form" ngxTvContainer>
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input formControlName="name" id="name" type="text">
-    </div>
-    <button type="submit">Submit</button>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input formControlName="name" id="name" type="text">
+  </div>
+  <button type="submit">Submit</button>
 </form>
 <ngx-tv-container-component></ngx-tv-container-component> // container component will be rendered here
 ```
@@ -167,8 +170,9 @@ Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on the process for 
 ## Versioning
 
 | Library version | Angular version |
-| :-------------: | :-------------: |
-|      13.x       |      13.x       |
+|:---------------:|:---------------:|
+|      14.x       |       >16       |
+|      13.x       |    >=13 <16     |
 |       1.x       |      12.x       |
 
 <div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
