@@ -1,3 +1,28 @@
+# [14.0.0](https://github.com/RiskChallenger/translation-validation/compare/v13.0.2...v14.0.0) (2024-11-13)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v18 ([dbc141c](https://github.com/RiskChallenger/translation-validation/commit/dbc141cc42ec33097ab0a5f26ea322d38b2ee43a))
+* **deps:** update dependency @ngneat/lib to v5 ([1139b3a](https://github.com/RiskChallenger/translation-validation/commit/1139b3aa0ff452e9fe5044a0f148162550c6c6f6))
+* **deps:** update dependency @ngneat/transloco to v6 ([e10910b](https://github.com/RiskChallenger/translation-validation/commit/e10910b0fe6a6ce91274827a37a3eede6079bd4d))
+* **deps:** update dependency tslib to v2.7.0 ([0ab66af](https://github.com/RiskChallenger/translation-validation/commit/0ab66af41d38d4db12d75fe0e18c1606cfa31827))
+* **deps:** update dependency zone.js to v0.15.0 ([7efb4e3](https://github.com/RiskChallenger/translation-validation/commit/7efb4e3c7f2bc3384216805c90260369fee3e035))
+
+
+### chore
+
+* 🤖 ugrade angular to 14 ([32ab87c](https://github.com/RiskChallenger/translation-validation/commit/32ab87cbf2709d6b329157c8ddf8cbe3bcce86ef))
+* 🤖 upgrade angular to 15 ([938b154](https://github.com/RiskChallenger/translation-validation/commit/938b15421e5c0fce1604c4724e2d505ab36569f3))
+* 🤖 upgrade angular to 16 ([c347578](https://github.com/RiskChallenger/translation-validation/commit/c347578344ceb91955a3682b801b1cf8a02dfdc6))
+
+
+### BREAKING CHANGES
+
+* 🧨 Now requires angular 16
+* 🧨 Now requires angular 15
+* 🧨 Now requires angular 14
+
 ## [13.0.2](https://github.com/RiskChallenger/translation-validation/compare/v13.0.1...v13.0.2) (2022-07-19)
 
 ### Bug Fixes
