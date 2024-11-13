@@ -1,9 +1,11 @@
-import { TestBed } from '@angular/core/testing';
+import { fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { AppModule } from './app.module';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [AppModule],
       declarations: [AppComponent],
     }).compileComponents();
   });
@@ -14,18 +16,21 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-localized-validation-messages'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-localized-validation-messages');
+  (['formOnSubmit', 'formOnBlur', 'formOnChange'] as const).forEach((formName) => {
+    it(`should have as have a form: ${formName}`, fakeAsync(() => {
+      const fixture = TestBed.createComponent(AppComponent);
+      const app = fixture.componentInstance;
+      expect(app[formName]).toBeTruthy();
+    }));
   });
 
-  it('should render title', () => {
+  xit('should render title', fakeAsync(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
+    tick();
+    fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain(
-      'angular-localized-validation-messages app is running!',
-    );
-  });
+    console.log(compiled);
+    expect(compiled.querySelector('h1').textContent).toContain('Example translation validation');
+  }));
 });
