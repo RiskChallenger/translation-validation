@@ -112,7 +112,8 @@
           "options": {
             "baseHref": "/translation-validation/",
             "name": "Langstra",
-            "email": "wybren@riskchallenger.nl"
+            "email": "wybren@riskchallenger.nl",
+            "dir": "./dist/translation-validation"
           }
         },
         "lint": {
