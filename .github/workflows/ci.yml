@@ -13,16 +13,10 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-
-      - name: Use Node.js 14
-        uses: actions/setup-node@v2-beta
+      - uses: actions/setup-node@v4
         with:
-          node-version: 14
-
-      - name: Install
-        run: |
-          yarn config set ignore-engines true
-          yarn
+          node-version: 20
+      - uses: threeal/setup-yarn-action@v2.0.0
 
       - name: Build Step
         run: yarn build:lib
