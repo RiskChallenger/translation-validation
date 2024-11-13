@@ -5,6 +5,7 @@ import { NGX_TV_CONFIG, NgxTvConfig } from './ngx-tv.config';
 @Directive({
   // eslint-disable-next-line @angular-eslint/directive-selector
   selector: '[formGroup]',
+  standalone: true,
 })
 export class NgxTvFormDirective {
   submit$ = this.hostFormGroup.ngSubmit;

@@ -23,6 +23,7 @@ import { NGX_TV_CONFIG, NgxTvConfig } from './ngx-tv.config';
 @Directive({
   // eslint-disable-next-line @angular-eslint/directive-selector
   selector: '[formControl], [formControlName]',
+  standalone: true,
 })
 export class NgxTvDirective implements OnInit, OnDestroy {
   ref?: ComponentRef<NgxTvContainerComponent>;

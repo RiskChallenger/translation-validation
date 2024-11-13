@@ -1,19 +1,14 @@
 import { Component, inject } from '@angular/core';
-import { NonNullableFormBuilder, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TranslocoService, TranslocoDirective } from '@ngneat/transloco';
+import { FormsModule, NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { TranslocoDirective, TranslocoService } from '@ngneat/transloco';
 import { NgxTvModule } from 'ngx-translation-validation';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
-    standalone: true,
-    imports: [
-        TranslocoDirective,
-        FormsModule,
-        NgxTvModule,
-        ReactiveFormsModule,
-    ],
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [TranslocoDirective, FormsModule, NgxTvModule, ReactiveFormsModule],
 })
 export class AppComponent {
   private readonly formBuilder = inject(NonNullableFormBuilder);

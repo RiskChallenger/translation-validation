@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from '@angular/core';
-import { HashMap } from '@ngneat/transloco';
+import { HashMap, TranslocoDirective } from '@ngneat/transloco';
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
@@ -7,6 +7,8 @@ import { HashMap } from '@ngneat/transloco';
   templateUrl: './ngx-tv-container.component.html',
   styleUrls: ['./ngx-tv-container.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [TranslocoDirective],
 })
 export class NgxTvContainerComponent {
   componentText = '';

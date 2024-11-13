@@ -5,29 +5,19 @@ import { NgxTvContainerDirective } from './ngx-tv-container.directive';
 import { NgxTvContainerComponent } from './ngx-tv-container/ngx-tv-container.component';
 import { NgxTvFormDirective } from './ngx-tv-form.directive';
 import { NgxTvScopeDirective } from './ngx-tv-scope.directive';
-import { NGX_TV_CONFIG, NgxTvConfig } from './ngx-tv.config';
+import { getConfig, NGX_TV_CONFIG, NgxTvConfig } from './ngx-tv.config';
 import { NgxTvDirective } from './ngx-tv.directive';
 
-export function getConfig(config?: Partial<NgxTvConfig>): NgxTvConfig {
-  return {
-    type: 'validation',
-    defaultScope: 'general',
-    submittedClass: 'ng-submitted',
-    errorsComponent: NgxTvContainerComponent,
-    invalidClass: undefined,
-    ...config,
-  };
-}
-
 @NgModule({
-  declarations: [
+  imports: [
+    CommonModule,
+    TranslocoModule,
     NgxTvDirective,
     NgxTvFormDirective,
     NgxTvContainerComponent,
     NgxTvContainerDirective,
     NgxTvScopeDirective,
   ],
-  imports: [CommonModule, TranslocoModule],
   exports: [NgxTvDirective, NgxTvFormDirective, NgxTvContainerComponent, NgxTvContainerDirective, NgxTvScopeDirective],
 })
 export class NgxTvModule {

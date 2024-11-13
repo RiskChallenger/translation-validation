@@ -5,7 +5,7 @@ import { environment } from './environments/environment';
 import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
-import { NgxTvModule } from 'ngx-translation-validation';
+import { provideNgxTv } from 'ngx-translation-validation';
 import { AppComponent } from './app/app.component';
 import { provideTransloco, translocoConfig } from '@ngneat/transloco';
 import { TranslocoHttpLoader } from './app/transloco/transloco-http-loader';
@@ -26,15 +26,11 @@ bootstrapApplication(AppComponent, {
       }),
       loader: TranslocoHttpLoader,
     }),
-    importProvidersFrom(
-      BrowserModule,
-      FormsModule,
-      ReactiveFormsModule,
-      NgxTvModule.forRoot({
-        type: 'validation',
-        invalidClass: 'invalid-input',
-      }),
-    ),
+    provideNgxTv({
+      type: 'validation',
+      invalidClass: 'invalid-input',
+    }),
+    importProvidersFrom(BrowserModule, FormsModule, ReactiveFormsModule),
     provideHttpClient(withInterceptorsFromDi()),
   ],
 }).catch((err) => console.error(err));

@@ -9,3 +9,4 @@ export * from './lib/ngx-tv-form.directive';
 export * from './lib/ngx-tv.config';
 export * from './lib/ngx-tv-container/ngx-tv-container.component';
 export * from './lib/ngx-tv.module';
+export * from './lib/ngx-tv.providers';
