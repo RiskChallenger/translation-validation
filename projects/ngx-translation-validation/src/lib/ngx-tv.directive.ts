@@ -1,5 +1,4 @@
 import {
-  ComponentFactoryResolver,
   ComponentRef,
   Directive,
   ElementRef,
@@ -37,7 +36,6 @@ export class NgxTvDirective implements OnInit, OnDestroy {
   constructor(
     private host: ElementRef<HTMLFormElement>,
     private vcr: ViewContainerRef,
-    private resolver: ComponentFactoryResolver,
     @Self() private controlDir: NgControl,
     @Inject(NGX_TV_CONFIG) private config: NgxTvConfig,
     @Optional() @Host() private controlErrorContainer?: NgxTvContainerDirective,
@@ -92,8 +90,7 @@ export class NgxTvDirective implements OnInit, OnDestroy {
 
   private setError(errorText: string | null, parameters?: Record<string, number | string>): void {
     if (!this.ref && errorText) {
-      const factory = this.resolver.resolveComponentFactory(this.config.errorsComponent);
-      this.ref = this.container.createComponent(factory);
+      this.ref = this.container.createComponent(this.config.errorsComponent);
       this.addInvalidClass();
     }
 
