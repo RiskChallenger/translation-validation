@@ -2,7 +2,9 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "esModuleInterop": true,
     "outDir": "./out-tsc/spec",
+    "resolveJsonModule": true,
     "types": ["jasmine"]
   },
   "files": ["src/test.ts", "src/polyfills.ts"],

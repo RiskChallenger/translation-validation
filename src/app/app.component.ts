@@ -1,14 +1,25 @@
-import { Component } from '@angular/core';
-import { UntypedFormBuilder, Validators } from '@angular/forms';
-import { TranslocoService } from '@ngneat/transloco';
+import { Component, inject } from '@angular/core';
+import { NonNullableFormBuilder, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TranslocoService, TranslocoDirective } from '@ngneat/transloco';
+import { NgxTvModule } from 'ngx-translation-validation';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    standalone: true,
+    imports: [
+        TranslocoDirective,
+        FormsModule,
+        NgxTvModule,
+        ReactiveFormsModule,
+    ],
 })
 export class AppComponent {
-  formOnSubmit = this.formBuilder.group(
+  private readonly formBuilder = inject(NonNullableFormBuilder);
+  private readonly transloco = inject(TranslocoService);
+
+  protected readonly formOnSubmit = this.formBuilder.group(
     {
       name: ['', Validators.required],
       email: ['', Validators.email],
@@ -19,7 +30,7 @@ export class AppComponent {
     },
   );
 
-  formOnBlur = this.formBuilder.group(
+  protected readonly formOnBlur = this.formBuilder.group(
     {
       name: ['', Validators.required],
       email: ['', Validators.email],
@@ -30,7 +41,7 @@ export class AppComponent {
     },
   );
 
-  formOnChange = this.formBuilder.group(
+  protected readonly formOnChange = this.formBuilder.group(
     {
       name: ['', Validators.required],
       email: ['', Validators.email],
@@ -41,16 +52,11 @@ export class AppComponent {
     },
   );
 
-  constructor(
-    private formBuilder: UntypedFormBuilder,
-    private transloco: TranslocoService,
-  ) {}
-
-  onSubmit(): void {
+  protected onSubmit(): void {
     // Intentionally left blank to trigger validation
   }
 
-  changeLang(locale: 'nl' | 'en'): void {
+  protected changeLang(locale: 'nl' | 'en'): void {
     this.transloco.setActiveLang(locale);
   }
 }

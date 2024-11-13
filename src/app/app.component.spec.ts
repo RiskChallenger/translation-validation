@@ -1,12 +1,12 @@
-import { fakeAsync, TestBed, tick } from '@angular/core/testing';
+import {fakeAsync, TestBed, tick} from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { AppModule } from './app.module';
+import { getTranslocoTestingModule } from './test/transloco-testing.module';
+import { NgxTvModule } from 'ngx-translation-validation';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppModule],
-      declarations: [AppComponent],
+      imports: [AppComponent, getTranslocoTestingModule(), NgxTvModule.forRoot()],
     }).compileComponents();
   });
 
@@ -24,13 +24,10 @@ describe('AppComponent', () => {
     }));
   });
 
-  xit('should render title', fakeAsync(() => {
+  it('should render title', fakeAsync(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    tick();
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    console.log(compiled);
-    expect(compiled.querySelector('h1').textContent).toContain('Example translation validation');
+
+    expect(fixture.nativeElement.querySelector('h1').textContent).toContain('Example translation validation');
   }));
 });

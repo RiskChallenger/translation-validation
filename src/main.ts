@@ -1,15 +1,40 @@
 import '@angular/compiler';
 
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
-import { AppModule } from './app/app.module';
+import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { environment } from './environments/environment';
+import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { NgxTvModule } from 'ngx-translation-validation';
+import { AppComponent } from './app/app.component';
+import { provideTransloco, translocoConfig } from '@ngneat/transloco';
+import { TranslocoHttpLoader } from './app/transloco/transloco-http-loader';
 
 if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic()
-  .bootstrapModule(AppModule)
-  .catch((err) => console.error(err));
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideTransloco({
+      config: translocoConfig({
+        availableLangs: ['en', 'nl'],
+        defaultLang: 'en',
+        // Remove this option if your application doesn't support changing language in runtime.
+        reRenderOnLangChange: true,
+        prodMode: environment.production,
+      }),
+      loader: TranslocoHttpLoader,
+    }),
+    importProvidersFrom(
+      BrowserModule,
+      FormsModule,
+      ReactiveFormsModule,
+      NgxTvModule.forRoot({
+        type: 'validation',
+        invalidClass: 'invalid-input',
+      }),
+    ),
+    provideHttpClient(withInterceptorsFromDi()),
+  ],
+}).catch((err) => console.error(err));
