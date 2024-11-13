@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { TRANSLOCO_SCOPE, TranslocoModule } from '@ngneat/transloco';
+import { provideTranslocoScope, TranslocoModule } from '@ngneat/transloco';
 import { NgxTvContainerDirective } from './ngx-tv-container.directive';
 import { NgxTvContainerComponent } from './ngx-tv-container/ngx-tv-container.component';
 import { NgxTvFormDirective } from './ngx-tv-form.directive';
@@ -39,7 +39,7 @@ export class NgxTvModule {
           provide: NGX_TV_CONFIG,
           useValue: getConfig(config),
         },
-        { provide: TRANSLOCO_SCOPE, useValue: getConfig(config).type },
+        provideTranslocoScope(getConfig(config).type),
       ],
     };
   }
