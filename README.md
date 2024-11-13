@@ -8,7 +8,7 @@
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/RiskChallenger/translation-validation/blob/main/CONTRIBUTING.md)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-We got tired of having to write code to display validation messages whenever a form control was invalid. 
+We got tired of having to write code to display validation messages whenever a form control was invalid.
 So instead we wrote a library that automatically injects a component displaying the error message.
 
 ## Features
@@ -51,13 +51,11 @@ After this, you will need to register the providers using `provideNgxTv()`
 This command will import the `NgxTvModule.forRoot()` in your `AppModule`:
 
 ```ts
-import {provideNgxTv} from 'ngx-translation-validation';
+import { provideNgxTv } from 'ngx-translation-validation';
 
 bootstrapApplication(AppComponent, {
-  providers: [
-    provideNgxTv(/* Optionally you can provide a config here **/),
-  ],
-})
+  providers: [provideNgxTv(/* Optionally you can provide a config here **/)],
+});
 ```
 
 ## Usage
@@ -65,15 +63,14 @@ bootstrapApplication(AppComponent, {
 To get started simply import the `NgxTvModule` in the module of the component you want to have validation messages.
 
 ```ts
-import {NgxTvModule} from 'ngx-translation-validation';
+import { NgxTvModule } from 'ngx-translation-validation';
 
 @NgModule({
   declarations: [UserComponent],
   imports: [NgxTvModule],
   bootstrap: [UserComponent],
 })
-export class UserModule {
-}
+export class UserModule {}
 ```
 
 And then every [formControlName] or [formControl] element will automatically show validation messages when it is invalid.
@@ -115,7 +112,7 @@ validation.organizationForm.name.required;
 To customize the behavior of the plugin you can pass an object the the `forRoot()` method.
 
 ```ts
-import {provideNgxTv} from 'ngx-translation-validation';
+import { provideNgxTv } from 'ngx-translation-validation';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -127,7 +124,7 @@ bootstrapApplication(AppComponent, {
       errorsComponent: SomeErrorContainerComponent, // default NgxTvContainerComponent
     }),
   ],
-})
+});
 ```
 
 - `invalidClass` - Class that is added to a formControl element when the control is invalid. Can be used for custom styling when you do not want to use `ng-invalid` (default: undefined)
@@ -143,8 +140,7 @@ To specify to what scope validation messages belong you can use the `ngxTvScope`
 By default the ngx-tv-container-component gets injected right after the formControl element. So you html would look something like this:
 
 ```html
-<input type="text"/>
-<ngx-tv-container-component></ngx-tv-container-component>
+<input type="text" /> <ngx-tv-container-component></ngx-tv-container-component>
 ```
 
 But if you'd like the container to appear in a parent of the controlForm you could specify the location of the container with the `ngxTvContainer` directive.
@@ -170,7 +166,7 @@ Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on the process for 
 ## Versioning
 
 | Library version | Angular version |
-|:---------------:|:---------------:|
+| :-------------: | :-------------: |
 |      14.x       |       >16       |
 |      13.x       |    >=13 <16     |
 |       1.x       |      12.x       |
