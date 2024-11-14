@@ -1,9 +1,8 @@
 ## [14.0.1](https://github.com/RiskChallenger/translation-validation/compare/v14.0.0...v14.0.1) (2024-11-13)
 
-
 ### Bug Fixes
 
-* 🐛 explicitely define peer dependency on @ngneat/transloco ([f99079d](https://github.com/RiskChallenger/translation-validation/commit/f99079d022210102c6667fcd57eba25f231f13dd))
+- 🐛 explicitely define peer dependency on @ngneat/transloco ([f99079d](https://github.com/RiskChallenger/translation-validation/commit/f99079d022210102c6667fcd57eba25f231f13dd))
 
 # [14.0.0](https://github.com/RiskChallenger/translation-validation/compare/v13.0.2...v14.0.0) (2024-11-13)
 

@@ -10,7 +10,7 @@ import {
   Self,
   ViewContainerRef,
 } from '@angular/core';
-import { NgControl } from '@angular/forms';
+import { AbstractControl, FormArray, FormGroup, NgControl } from '@angular/forms';
 import { EMPTY, fromEvent, merge, Observable, Subscription } from 'rxjs';
 import { shareReplay, tap } from 'rxjs/operators';
 import { NgxTvContainerDirective } from './ngx-tv-container.directive';
@@ -18,6 +18,7 @@ import { NgxTvContainerComponent } from './ngx-tv-container/ngx-tv-container.com
 import { NgxTvFormDirective } from './ngx-tv-form.directive';
 import { NgxTvScopeDirective } from './ngx-tv-scope.directive';
 import { NGX_TV_CONFIG, NgxTvConfig } from './ngx-tv.config';
+import { ControlNameNotFoundError } from './ngx-tv.errors';
 
 @Directive({
   // eslint-disable-next-line @angular-eslint/directive-selector
@@ -60,10 +61,11 @@ export class NgxTvDirective implements OnInit, OnDestroy {
 
     this.statusChangesObservable = merge(this.submit$, this.blur$, this.controlDir.statusChanges || EMPTY).subscribe(
       () => {
+        this.controlDir.name ??= NgxTvDirective.findControlName(this.controlDir);
         const controlErrors = this.controlDir.errors;
         if (controlErrors) {
           const firstKey = Object.keys(controlErrors)[0];
-          const parameters = Object.values(controlErrors)[0];
+          const parameters = controlErrors[firstKey];
           this.setError(`${this.config.type}.${this.scope}.${this.controlDir.name}.${firstKey}`, parameters);
         } else if (this.ref) {
           this.setError(null);
@@ -104,5 +106,48 @@ export class NgxTvDirective implements OnInit, OnDestroy {
       this.removeInvalidClass();
       this.ref = undefined;
     }
+  }
+
+  private static findControlName(control: NgControl): string {
+    if (control.name !== undefined && control.name !== null) {
+      return String(control.name);
+    }
+
+    if (control.control === null) {
+      throw new ControlNameNotFoundError('NgControl has no control');
+    }
+
+    const parent = control.control.parent;
+
+    if (parent === null) {
+      throw new ControlNameNotFoundError('Control is not part of a form group or form array');
+    } else if (parent instanceof FormArray) {
+      return NgxTvDirective.findArrayControlName(parent);
+    } else {
+      return NgxTvDirective.findGroupControlName(parent, control.control);
+    }
+  }
+
+  private static findArrayControlName(control: FormArray): string {
+    const parent = control.parent;
+
+    if (parent === null) {
+      throw new ControlNameNotFoundError('Control is not part of a form group');
+    } else if (parent instanceof FormArray) {
+      return NgxTvDirective.findArrayControlName(parent);
+    } else {
+      return NgxTvDirective.findGroupControlName(parent, control);
+    }
+  }
+
+  private static findGroupControlName(group: FormGroup, control: AbstractControl): string {
+    const groupControls = group.controls;
+    const controlName = Object.keys(groupControls).find((key) => groupControls[key] === control);
+
+    if (!controlName) {
+      throw new ControlNameNotFoundError('Control cannot be found in supplied group');
+    }
+
+    return controlName;
   }
 }

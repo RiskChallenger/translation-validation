@@ -98,6 +98,33 @@ type.scope.controlName.error;
 - `controlName` - Name of the control on which the validation error occurs
 - `error` - The name of the validation error that occurs
 
+> [!NOTE]  
+> If the parent of the control is a FormArray, the control name will be set to the name of the parent of the FormArray.
+
+<details>
+  <summary>More on resolving control names</summary>
+
+```js
+formBuilder.group({
+  name: ['', Validators.required], // When the control is in a group, use the key of the group, controlName -> name
+  company: formBuilder.group({
+    address: ['', Validators.required], // Nesting of groups is ignored, only direct parent is considered, controlName -> address
+  }),
+  cars: formBuilder.array([
+    formBuilder.group({
+      model: ['', Validators.required], // Group nested in array, only direct parent is considered, controlName -> model
+    }),
+  ]),
+  colorPreferences: formBuilder.array([
+    ['', Validators.required], // Control nested in array, controlName is name of array, controlName -> colorPreferences
+  ]),
+});
+```
+
+If the name of a control cannot be found, a `ControlNameNotFoundError` will be thrown, **no validation error will be shown!**
+
+</details>
+
 Examples
 
 ```ts
@@ -109,7 +136,7 @@ validation.organizationForm.name.required;
 
 ### Configuration
 
-To customize the behavior of the plugin you can pass an object the the `forRoot()` method.
+To customize the behavior of the plugin you can pass an object to the `forRoot()` method.
 
 ```ts
 import { provideNgxTv } from 'ngx-translation-validation';
@@ -137,7 +164,7 @@ To specify to what scope validation messages belong you can use the `ngxTvScope`
 
 ### Styling
 
-By default the ngx-tv-container-component gets injected right after the formControl element. So you html would look something like this:
+By default, the ngx-tv-container-component gets injected right after the formControl element. So you html would look something like this:
 
 ```html
 <input type="text" /> <ngx-tv-container-component></ngx-tv-container-component>

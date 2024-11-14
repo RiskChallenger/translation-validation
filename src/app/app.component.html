@@ -54,4 +54,31 @@
     </div>
     <button type="submit">{{ t('submit') }}</button>
   </form>
+
+  <h2>{{ t('array') }}</h2>
+  <form [formGroup]="formArray" (ngSubmit)="onSubmit()">
+    <ng-container *ngFor="let person of formArray.controls.persons.controls">
+      <div class="form-group">
+        <label for="name3">{{ t('name') }}</label>
+        <input [formControl]="person.controls.name" id="name4" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="email3">{{ t('email') }}</label>
+        <input [formControl]="person.controls.email" id="email4" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="phone3">{{ t('phone') }}</label>
+        <input [formControl]="person.controls.phone" id="phone4" type="text" />
+      </div>
+    </ng-container>
+    <ng-container *ngFor="let check of formArray.controls.checks.controls; index as i">
+      <div class="form-group">
+        <label [for]="'check-' + i" ngxTvContainer>
+          <input [formControl]="check" [id]="'check-' + i" type="checkbox" />
+          {{ t('check') }}
+        </label>
+      </div>
+    </ng-container>
+    <button type="submit">{{ t('submit') }}</button>
+  </form>
 </ng-container>
