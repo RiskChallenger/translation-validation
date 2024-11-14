@@ -1,4 +1,4 @@
-import { TranslocoTestingModule, TranslocoTestingOptions } from '@ngneat/transloco';
+import { TranslocoTestingModule, TranslocoTestingOptions } from '@jsverse/transloco';
 import en from '../../assets/i18n/en.json';
 import nl from '../../assets/i18n/nl.json';
 import enValidation from '../../assets/i18n/validation/en.json';

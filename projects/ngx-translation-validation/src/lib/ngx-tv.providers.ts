@@ -1,6 +1,6 @@
 import { NGX_TV_CONFIG, NgxTvConfig } from './ngx-tv.config';
 import { EnvironmentProviders, makeEnvironmentProviders } from '@angular/core';
-import { provideTranslocoScope } from '@ngneat/transloco';
+import { provideTranslocoScope } from '@jsverse/transloco';
 import { getConfig } from './ngx-tv.config';
 
 export function provideNgxTv(config?: Partial<NgxTvConfig>): EnvironmentProviders[] {

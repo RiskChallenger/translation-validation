@@ -7,7 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { provideNgxTv } from 'ngx-translation-validation';
 import { AppComponent } from './app/app.component';
-import { provideTransloco, translocoConfig } from '@ngneat/transloco';
+import { provideTransloco, translocoConfig } from '@jsverse/transloco';
 import { TranslocoHttpLoader } from './app/transloco/transloco-http-loader';
 
 if (environment.production) {

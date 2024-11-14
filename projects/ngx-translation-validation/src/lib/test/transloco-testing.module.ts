@@ -1,4 +1,4 @@
-import { TranslocoTestingModule, TranslocoTestingOptions } from '@ngneat/transloco';
+import { TranslocoTestingModule, TranslocoTestingOptions } from '@jsverse/transloco';
 
 export function getTranslocoTestingModule(options: TranslocoTestingOptions = {}) {
   return TranslocoTestingModule.forRoot({

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from '@angular/core';
-import { HashMap, TranslocoDirective } from '@ngneat/transloco';
+import { HashMap, TranslocoDirective } from '@jsverse/transloco';
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector

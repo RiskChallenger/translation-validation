@@ -7,7 +7,7 @@
   "peerDependencies": {
     "@angular/common": ">=16.0.0",
     "@angular/core": ">=16.0.0",
-    "@ngneat/transloco": ">5.0.0"
+    "@jsverse/transloco": ">7.0.0"
   },
   "dependencies": {
     "tslib": "2.7.0"
