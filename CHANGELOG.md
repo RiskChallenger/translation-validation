@@ -1,3 +1,27 @@
+# [15.0.0](https://github.com/RiskChallenger/translation-validation/compare/v14.0.1...v15.0.0) (2024-11-14)
+
+
+### Bug Fixes
+
+* 🐛 remove usage of deprecated code ([d300799](https://github.com/RiskChallenger/translation-validation/commit/d300799b5c32b2e7f39feb4559581c6eec13ed9b)), closes [#100](https://github.com/RiskChallenger/translation-validation/issues/100)
+
+
+### chore
+
+* 🤖 update transloco peer dependency ([4bcb879](https://github.com/RiskChallenger/translation-validation/commit/4bcb87975e399c6a67bd62b756b05b177d9285cf))
+
+
+### Features
+
+* 🎸 improve control name resolution ([3755cb9](https://github.com/RiskChallenger/translation-validation/commit/3755cb916325ae77897456ad31fe15df2d1e3b28)), closes [#101](https://github.com/RiskChallenger/translation-validation/issues/101)
+
+
+### BREAKING CHANGES
+
+* 🧨 Updated transloco peer dependency from @ngneat/transloco >5.0.0 to
+@jsverse/transloco >7.0.0
+* 🧨 Resolution of control names has been updated
+
 ## [14.0.1](https://github.com/RiskChallenger/translation-validation/compare/v14.0.0...v14.0.1) (2024-11-13)
 
 ### Bug Fixes
