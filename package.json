@@ -18,7 +18,6 @@
     "build:lib": "ng build ngx-translation-validation --configuration=production && npm run copy",
     "test:lib": "ng test ngx-translation-validation",
     "test:lib:headless": "cross-env CI=true npm run test:lib -- --no-watch --no-progress",
-    "release": "cd projects/ngx-translation-validation && standard-version --infile ../../CHANGELOG.md",
     "semantic-release": "semantic-release",
     "prepare": "husky install",
     "i18n:extract": "transloco-keys-manager extract",
@@ -81,7 +80,6 @@
     "prettier": "^3.5.3",
     "prettier-eslint": "^16.4.2",
     "semantic-release": "24.2.5",
-    "standard-version": "9.5.0",
     "ts-node": "10.9.2",
     "typescript": "5.5.4"
   },
