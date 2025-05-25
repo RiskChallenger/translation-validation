@@ -7,7 +7,7 @@ import { HashMap, TranslocoDirective } from '@jsverse/transloco';
   templateUrl: './ngx-tv-container.component.html',
   styleUrls: ['./ngx-tv-container.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
+  standalone: true, // Keep property present for backwards compatibility.
   imports: [TranslocoDirective],
 })
 export class NgxTvContainerComponent {

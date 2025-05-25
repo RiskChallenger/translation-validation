@@ -3,7 +3,6 @@ import { TestingModule } from '../testing.module';
 import { NonNullableFormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  standalone: true,
   template: `
     <form [formGroup]="form">
       <input type="text" formControlName="name" />
@@ -20,7 +19,6 @@ export class FormGroupNamedFormControlComponent {
 }
 
 @Component({
-  standalone: true,
   template: `
     <form [formGroup]="form">
       <input type="text" [formControl]="form.controls.name" />

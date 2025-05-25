@@ -8,7 +8,6 @@ import { NgFor } from '@angular/common';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  standalone: true,
   imports: [TranslocoDirective, FormsModule, NgxTvModule, ReactiveFormsModule, NgFor],
 })
 export class AppComponent {
