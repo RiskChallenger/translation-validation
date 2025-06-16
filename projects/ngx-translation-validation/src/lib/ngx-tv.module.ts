@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { provideTranslocoScope, TranslocoModule } from '@jsverse/transloco';
+import { ProviderScope, provideTranslocoScope, TranslocoModule } from '@jsverse/transloco';
 import { NgxTvContainerDirective } from './ngx-tv-container.directive';
 import { NgxTvContainerComponent } from './ngx-tv-container/ngx-tv-container.component';
 import { NgxTvFormDirective } from './ngx-tv-form.directive';
 import { NgxTvScopeDirective } from './ngx-tv-scope.directive';
-import { getConfig, NGX_TV_CONFIG, NgxTvConfig } from './ngx-tv.config';
+import { getConfig, NGX_TV_CONFIG, NGX_TV_TRANSLOCO_SCOPE, NgxTvConfig } from './ngx-tv.config';
 import { NgxTvDirective } from './ngx-tv.directive';
 
 @NgModule({
@@ -22,6 +22,10 @@ import { NgxTvDirective } from './ngx-tv.directive';
 })
 export class NgxTvModule {
   static forRoot(config?: Partial<NgxTvConfig>): ModuleWithProviders<NgxTvModule> {
+    const translocoScope: ProviderScope = {
+      scope: getConfig(config).type,
+    };
+
     return {
       ngModule: NgxTvModule,
       providers: [
@@ -29,7 +33,11 @@ export class NgxTvModule {
           provide: NGX_TV_CONFIG,
           useValue: getConfig(config),
         },
-        provideTranslocoScope(getConfig(config).type),
+        {
+          provide: NGX_TV_TRANSLOCO_SCOPE,
+          useValue: translocoScope,
+        },
+        provideTranslocoScope(translocoScope),
       ],
     };
   }

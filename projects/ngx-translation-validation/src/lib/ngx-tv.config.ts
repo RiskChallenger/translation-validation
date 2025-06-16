@@ -1,5 +1,6 @@
 import { InjectionToken, Type } from '@angular/core';
 import { NgxTvContainerComponent } from './ngx-tv-container/ngx-tv-container.component';
+import { ProviderScope } from '@jsverse/transloco';
 
 export interface NgxTvConfig {
   type: string;
@@ -9,7 +10,8 @@ export interface NgxTvConfig {
   errorsComponent: Type<NgxTvContainerComponent>;
 }
 
-export const NGX_TV_CONFIG = new InjectionToken('NGX_TV_CONFIG');
+export const NGX_TV_CONFIG = new InjectionToken<NgxTvConfig>('NGX_TV_CONFIG');
+export const NGX_TV_TRANSLOCO_SCOPE = new InjectionToken<ProviderScope>('NGX_TV_TRANSLOCO_SCOPE');
 
 export function getConfig(config?: Partial<NgxTvConfig>): NgxTvConfig {
   return {
