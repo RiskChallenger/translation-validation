@@ -33,11 +33,12 @@ describe('NgxTvDirective', () => {
           expect(directive.ref).not.toBeDefined();
 
           inputElement.nativeElement.dispatchEvent(new Event('blur'));
+          fixture.detectChanges();
 
-          expect(setErrorSpy).toHaveBeenCalledOnceWith('validation.general.name.required', true);
+          expect(setErrorSpy).toHaveBeenCalledOnceWith('general.name.required', true);
 
           expect(directive.ref).toBeDefined();
-          expect(fixture.nativeElement.textContent).toContain('validation.general.name.required');
+          expect(fixture.nativeElement.textContent).toContain('general.name.required');
         });
 
         it('should remove a validation error', () => {
@@ -50,6 +51,7 @@ describe('NgxTvDirective', () => {
           fixture.detectChanges();
 
           inputElement.nativeElement.dispatchEvent(new Event('blur'));
+          fixture.detectChanges();
 
           expect(setErrorSpy).toHaveBeenCalled();
 
@@ -61,7 +63,7 @@ describe('NgxTvDirective', () => {
 
           expect(setErrorSpy).toHaveBeenCalledWith(null);
           expect(directive.ref).not.toBeDefined();
-          expect(fixture.nativeElement.textContent).not.toContain('validation.general.name.required');
+          expect(fixture.nativeElement.textContent).not.toContain('general.name.required');
         });
       });
     });

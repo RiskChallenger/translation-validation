@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from '@angular/core';
-import { HashMap, TranslocoDirective } from '@jsverse/transloco';
+import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
+import { HashMap, translateSignal } from '@jsverse/transloco';
+import { NGX_TV_TRANSLOCO_SCOPE } from '../ngx-tv.config';
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
@@ -8,25 +9,15 @@ import { HashMap, TranslocoDirective } from '@jsverse/transloco';
   styleUrls: ['./ngx-tv-container.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true, // Keep property present for backwards compatibility.
-  imports: [TranslocoDirective],
 })
 export class NgxTvContainerComponent {
-  componentText = '';
-  componentHide = true;
-  componentParameters?: HashMap;
+  private readonly scope = inject(NGX_TV_TRANSLOCO_SCOPE);
 
-  @Input() set text(value: string | null) {
-    if (value !== this.componentText) {
-      this.componentHide = !value;
-      this.componentText = value || '';
-      this.cdr.detectChanges();
-    }
-  }
+  public parameters = input<HashMap | undefined>(undefined);
+  public text = input<string, string | null>('', {
+    transform: (v) => v ?? '',
+  });
 
-  @Input() set parameters(value: Record<string, string | number> | undefined) {
-    this.componentParameters = value;
-    this.cdr.detectChanges();
-  }
-
-  constructor(private cdr: ChangeDetectorRef) {}
+  protected translatedText = translateSignal(this.text, this.parameters, this.scope);
+  protected hide = computed(() => this.text().length === 0);
 }

@@ -41,6 +41,7 @@ describe('AppComponent', () => {
 
       const submitForm = fixture.nativeElement.querySelector('form[ngxtvscope=submit]');
       submitForm.querySelector('button').click();
+      fixture.detectChanges();
 
       expect(submitForm.querySelector('.input-errors')).not.toBeNull();
 

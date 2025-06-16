@@ -1,5 +1,3 @@
-<ng-container *transloco="let t">
-  <p class="input-errors" [class.hide]="componentHide">
-    {{ t(componentText, componentParameters) }}
-  </p>
-</ng-container>
+<p class="input-errors" [class.hide]="hide()">
+  {{ translatedText() }}
+</p>
