@@ -1,14 +1,4 @@
 {
   "extends": ["config:recommended"],
-  "schedule": ["before 3am on the first day of the month"],
-  "packageRules": [
-    {
-      "matchPackageNames": ["typescript"],
-      "allowedVersions": "<=4.2"
-    },
-    {
-      "matchPackageNames": ["rxjs"],
-      "allowedVersions": "<7"
-    }
-  ]
+  "schedule": ["before 3am on the first day of the month"]
 }
