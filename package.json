@@ -97,5 +97,12 @@
     "type": "git",
     "url": "https://github.com/RiskChallenger/translation-validation.git"
   },
-  "packageManager": "yarn@4.9.1"
+  "packageManager": "yarn@4.9.1",
+  "packageExtensions": {
+    "ng-packagr@19.2.2": {
+      "dependencies": {
+        "@ampproject/remapping": "^2.3.0"
+      }
+    }
+  }
 }
