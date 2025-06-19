@@ -1,3 +1,22 @@
+# [16.0.0](https://github.com/RiskChallenger/translation-validation/compare/v15.0.0...v16.0.0) (2025-06-19)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo ([c99fa22](https://github.com/RiskChallenger/translation-validation/commit/c99fa22ced4235ee8aed3f0c6d8801d2bdcee039))
+* explicitly use scope for translating validation errors ([5abe5ba](https://github.com/RiskChallenger/translation-validation/commit/5abe5ba1d579c75b5ee2eb30cdb3bd7347f6a7a3)), closes [#154](https://github.com/RiskChallenger/translation-validation/issues/154)
+
+
+### chore
+
+* update peerDependencies to angular 18 and transloco 7.6 ([3276590](https://github.com/RiskChallenger/translation-validation/commit/32765908b6208bbc68964bd6a6228e38e5eeade4))
+
+
+### BREAKING CHANGES
+
+* 🧨 Requires angular >= 18
+* 🧨 Requires transloco >= 7.6
+
 # [15.0.0](https://github.com/RiskChallenger/translation-validation/compare/v14.0.1...v15.0.0) (2024-11-14)
 
 ### Bug Fixes
