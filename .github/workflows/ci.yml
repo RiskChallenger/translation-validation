@@ -30,4 +30,4 @@ jobs:
       - name: Release to GitHub Pages
         run: yarn deploy --no-silent
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}

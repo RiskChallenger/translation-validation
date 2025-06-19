@@ -99,8 +99,8 @@
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "baseHref": "/translation-validation/",
-            "name": "Langstra",
-            "email": "wybren@riskchallenger.nl",
+            "name": "RiskChallenger",
+            "email": "noreply@riskchallenger.nl",
             "dir": "./dist/translation-validation"
           }
         },
