@@ -5,7 +5,7 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@ampproject/remapping@npm:2.3.0, @ampproject/remapping@npm:^2.2.0":
+"@ampproject/remapping@npm:2.3.0, @ampproject/remapping@npm:^2.2.0, @ampproject/remapping@npm:^2.3.0":
   version: 2.3.0
   resolution: "@ampproject/remapping@npm:2.3.0"
   dependencies:
@@ -14134,6 +14134,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "translation-validation@workspace:."
   dependencies:
+    "@ampproject/remapping": "npm:^2.3.0"
     "@angular-devkit/build-angular": "npm:19.2.13"
     "@angular-devkit/core": "npm:19.2.13"
     "@angular-devkit/schematics": "npm:19.2.13"
