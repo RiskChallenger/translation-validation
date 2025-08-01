@@ -3051,9 +3051,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ngneat/spectator@npm:19.6.1":
-  version: 19.6.1
-  resolution: "@ngneat/spectator@npm:19.6.1"
+"@ngneat/spectator@npm:19.6.2":
+  version: 19.6.2
+  resolution: "@ngneat/spectator@npm:19.6.2"
   dependencies:
     "@testing-library/dom": "npm:^8.11.0"
     jquery: "npm:^3.7.1"
@@ -3063,7 +3063,7 @@ __metadata:
     "@angular/animations": ">= 18.0.0"
     "@angular/common": ">= 18.0.0"
     "@angular/router": ">= 18.0.0"
-  checksum: 10c0/5be79704e34ee83e025382292b25ecf7f51efcad55bf2cc8ceb50d751b9fbbfdbb7489b28332e07cc8c8cbc8780e9b49bf242fea8b35aaa8ab691aeb133f1e26
+  checksum: 10c0/ced82a3804e3298c18df5fb29ac30c23cf16b367b0318bd3810092b8c26281e840e030246e8ce93d2a7995b6539dde0d0cb0e0079e5034c87178ddd4747c5cf6
   languageName: node
   linkType: hard
 
@@ -14158,7 +14158,7 @@ __metadata:
     "@commitlint/config-conventional": "npm:19.8.1"
     "@jsverse/transloco": "npm:7.6.1"
     "@jsverse/transloco-keys-manager": "npm:6.1.0"
-    "@ngneat/spectator": "npm:19.6.1"
+    "@ngneat/spectator": "npm:19.6.2"
     "@semantic-release/changelog": "npm:6.0.3"
     "@semantic-release/git": "npm:10.0.1"
     "@types/jasmine": "npm:5.1.8"
