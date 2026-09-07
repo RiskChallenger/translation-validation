@@ -53,7 +53,7 @@
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-angular": "19.8.1",
     "@commitlint/config-conventional": "19.8.1",
-    "@jsverse/transloco-keys-manager": "6.1.0",
+    "@jsverse/transloco-keys-manager": "6.2.2",
     "@ngneat/spectator": "19.6.1",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
